@@ -262,6 +262,29 @@
             transform: translateX(2px);
         }
         
+        /* Coming soon styles */
+        .faq-card.coming-soon {
+            opacity: 0.7;
+            background: #f9f9f9;
+        }
+        
+        .faq-card.coming-soon .faq-button {
+            background: #999999;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        
+        .faq-card.coming-soon .faq-button::after {
+            content: '⏳';
+        }
+        
+        .coming-soon-note {
+            font-size: 0.8rem;
+            color: #999999;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        
         /* Emergency context section */
         .emergency-context {
             background: #f5f5f7;
@@ -761,19 +784,21 @@
                     <article class="faq-card" itemscope itemtype="https://schema.org/Article">
                         <h3 itemprop="headline">How long does a satellite phone battery last?</h3>
                         <p class="faq-preview" itemprop="description">Battery performance in standby and talk time, power conservation for emergencies, and backup power solutions for extended disaster situations.</p>
-                        <a href="how-long-does-battery-last.html" class="faq-button">Read Full Answer</a>
+                        <a href="how-long-do-satellite-phone-batteries-last.html" class="faq-button">Read Full Answer</a>
                     </article>
 
-                    <article class="faq-card" itemscope itemtype="https://schema.org/Article">
+                    <article class="faq-card coming-soon" itemscope itemtype="https://schema.org/Article">
                         <h3 itemprop="headline">Do satellite phones need SIM cards?</h3>
                         <p class="faq-preview" itemprop="description">SIM card requirements, activation process, and service setup for emergency preparedness, including international usage and network access.</p>
-                        <a href="do-satellite-phones-need-sim-cards.html" class="faq-button">Read Full Answer</a>
+                        <a href="#" class="faq-button">Coming Soon</a>
+                        <p class="coming-soon-note">This FAQ is currently being developed and will be available soon.</p>
                     </article>
 
-                    <article class="faq-card" itemscope itemtype="https://schema.org/Article">
+                    <article class="faq-card coming-soon" itemscope itemtype="https://schema.org/Article">
                         <h3 itemprop="headline">Can satellite phones replace cell phones?</h3>
                         <p class="faq-preview" itemprop="description">Practical limitations, cost considerations, and why satellite phones complement rather than replace cellular service for comprehensive emergency communication.</p>
-                        <a href="can-satellite-phones-replace-cell-phone.html" class="faq-button">Read Full Answer</a>
+                        <a href="#" class="faq-button">Coming Soon</a>
+                        <p class="coming-soon-note">This FAQ is currently being developed and will be available soon.</p>
                     </article>
 
                     <article class="faq-card" itemscope itemtype="https://schema.org/Article">
