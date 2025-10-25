@@ -79,263 +79,275 @@
             color: #ff3b30;
         }
         
-        .container {
-            max-width: 1200px;
+        main {
+            max-width: 900px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 3rem 2rem;
         }
         
         .breadcrumb {
-            padding: 1.5rem 0;
-            font-size: 0.875rem;
+            margin-bottom: 2rem;
             color: #666666;
+            font-size: 0.9rem;
         }
         
         .breadcrumb a {
-            color: #ff3b30;
+            color: #666666;
             text-decoration: none;
         }
         
         .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        
-        main {
-            padding: 2rem 0 4rem;
-            min-height: 60vh;
+            color: #ff3b30;
         }
         
         h1 {
-            font-size: 3rem;
-            line-height: 1.1;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            font-weight: 700;
             color: #000000;
-        }
-        
-        h2 {
-            font-size: 2rem;
+            margin-bottom: 2rem;
             line-height: 1.2;
-            font-weight: 600;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: #000000;
         }
         
-        h3 {
+        .short-answer {
+            background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+            border-left: 4px solid #ff3b30;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .short-answer h2 {
             font-size: 1.5rem;
-            line-height: 1.3;
             font-weight: 600;
-            margin-top: 2rem;
             margin-bottom: 1rem;
             color: #000000;
         }
         
-        .short-answer {
-            font-size: 1.25rem;
-            line-height: 1.5;
-            color: #000000;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background-color: #f5f5f7;
-            border-radius: 0.5rem;
-        }
-        
-        p, ul, ol {
-            font-size: 1.0625rem;
-            line-height: 1.65;
-            margin-bottom: 1.25rem;
+        .short-answer p {
+            font-size: 1.1rem;
+            line-height: 1.7;
             color: #333333;
         }
         
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #000000;
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e5e7;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #000000;
+            margin: 2rem 0 1rem;
+        }
+        
+        h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #000000;
+            margin: 1.5rem 0 0.75rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
         ul, ol {
-            margin-left: 2rem;
+            margin: 0 0 1.5rem 2rem;
         }
         
         li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
         }
         
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            background-color: #ffffff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-radius: 0.75rem;
-            overflow: hidden;
-        }
-        
-        .comparison-table th {
-            background-color: #ff3b30;
-            color: #ffffff;
-            padding: 1rem;
-            text-align: left;
+        strong {
             font-weight: 600;
-            font-size: 0.9rem;
-        }
-        
-        .comparison-table td {
-            padding: 1rem;
-            border-bottom: 1px solid #e5e5e7;
-            font-size: 0.9rem;
-        }
-        
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .comparison-table tr:nth-child(even) {
-            background: #f5f5f7;
+            color: #000000;
         }
         
         .emergency-tip {
-            background-color: #fff3cd;
-            border-left: 4px solid #ff9500;
+            background: #fff3f3;
+            border-left: 4px solid #ff3b30;
             padding: 1.5rem;
+            border-radius: 8px;
             margin: 2rem 0;
-            border-radius: 0.5rem;
         }
         
-        .emergency-tip h3 {
-            color: #ff9500;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            gap: 0.625rem;
-        }
-        
-        .emergency-tip h3:before {
-            content: "⚠️";
-            font-size: 24px;
+        .emergency-tip strong {
+            color: #ff3b30;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
         
         .pros-cons-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin: 2rem 0;
         }
         
         .pros-card, .cons-card {
             padding: 1.5rem;
-            border-radius: 0.75rem;
+            border-radius: 12px;
+            border: 1px solid #e5e5e7;
         }
         
         .pros-card {
-            background: #f0f9f4;
-            border: 1px solid #34c759;
+            background: #f0fff4;
+            border-left: 4px solid #34c759;
         }
         
         .cons-card {
-            background: #fef2f2;
-            border: 1px solid #ff3b30;
+            background: #fff5f5;
+            border-left: 4px solid #ff3b30;
         }
         
         .pros-card h3 {
             color: #34c759;
-            margin-bottom: 15px;
         }
         
         .cons-card h3 {
             color: #ff3b30;
-            margin-bottom: 15px;
         }
         
-        .mini-faq {
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid #e5e5e7;
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
         
-        .mini-faq h2 {
-            margin-top: 0;
-            margin-bottom: 2rem;
-        }
-        
-        .mini-faq dl {
-            margin-bottom: 0;
-        }
-        
-        .mini-faq dt {
-            font-size: 1.25rem;
+        .comparison-table th {
+            background: #f5f5f7;
+            padding: 1.25rem;
+            text-align: left;
             font-weight: 600;
-            margin-bottom: 1rem;
             color: #000000;
+            border-bottom: 2px solid #e5e5e7;
         }
         
-        .mini-faq dd {
-            font-size: 1.0625rem;
-            line-height: 1.65;
-            color: #333333;
-            margin-bottom: 2rem;
-            margin-left: 0;
-            padding-bottom: 2rem;
+        .comparison-table td {
+            padding: 1rem 1.25rem;
             border-bottom: 1px solid #e5e5e7;
         }
         
-        .mini-faq dd:last-child {
+        .comparison-table tr:last-child td {
             border-bottom: none;
         }
         
-        .related-section {
-            margin-top: 3rem;
-            padding: 2rem;
-            background-color: #f5f5f7;
-            border-radius: 0.75rem;
+        .highlight-box {
+            background: linear-gradient(135deg, #fff9f0 0%, #fff5eb 100%);
+            border: 1px solid #ffcc88;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
         }
         
-        .related-section h3 {
-            margin-top: 0;
-            margin-bottom: 1.25rem;
+        .highlight-box h3 {
+            color: #ff6b00;
+            margin-bottom: 1rem;
+        }
+        
+        .mini-faq {
+            background: #f5f5f7;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+        
+        .mini-faq h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
             color: #000000;
         }
         
-        .related-section ul {
+        .mini-faq dl dt {
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #000000;
+        }
+        
+        .mini-faq dl dd {
+            margin-left: 0;
+            color: #333333;
+            line-height: 1.6;
+        }
+        
+        .related-faqs {
+            background: #f5f5f7;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+        
+        .related-faqs h2 {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .related-faqs ul {
             list-style: none;
             margin-left: 0;
         }
         
-        .related-section li {
-            margin-bottom: 0;
+        .related-faqs li {
+            margin-bottom: 1rem;
         }
         
-        .related-section a {
-            color: #ff3b30;
+        .related-faqs a {
+            color: #000000;
             text-decoration: none;
-            font-size: 1.0625rem;
             display: flex;
             align-items: center;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #e5e5e7;
-            transition: color 0.2s ease;
+            padding: 0.75rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
         }
         
-        .related-section a::before {
-            content: "→";
-            margin-right: 0.625rem;
-            font-weight: 600;
+        .related-faqs a:hover {
+            background: #ffffff;
+            color: #ff3b30;
+            transform: translateX(4px);
         }
         
-        .related-section a:hover {
-            color: #d70000;
-        }
-        
-        .related-section li:last-child a {
-            border-bottom: none;
+        .related-faqs a::before {
+            content: '→';
+            margin-right: 0.75rem;
+            color: #ff3b30;
+            font-weight: bold;
         }
         
         footer {
-            margin-top: 5rem;
-            padding: 2.5rem 0;
+            margin-top: 4rem;
+            padding: 3rem 2rem;
             border-top: 1px solid #e5e5e7;
-            background-color: #f5f5f7;
+            text-align: center;
+            background: #f5f5f7;
         }
         
         .footer-content {
-            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-content p {
             color: #666666;
-            font-size: 0.875rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
         }
         
         .footer-content a {
@@ -349,24 +361,15 @@
         
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.25rem;
+                font-size: 2rem;
             }
             
             h2 {
-                font-size: 1.75rem;
-                margin-top: 2.5rem;
+                font-size: 1.5rem;
             }
             
-            h3 {
-                font-size: 1.375rem;
-            }
-            
-            .short-answer {
-                font-size: 1.125rem;
-            }
-            
-            .nav-links {
-                gap: 1.5rem;
+            main {
+                padding: 2rem 1rem;
             }
             
             .pros-cons-grid {
@@ -374,12 +377,11 @@
             }
             
             .comparison-table {
-                font-size: 14px;
+                font-size: 0.9rem;
             }
             
-            .comparison-table th,
-            .comparison-table td {
-                padding: 0.625rem;
+            .comparison-table th, .comparison-table td {
+                padding: 0.75rem;
             }
         }
     </style>
@@ -502,8 +504,8 @@
             </table>
 
             <div class="emergency-tip">
-                <h3>Critical Storm Planning</h3>
-                <p>During major storms, satellite internet often outlasts cable and fiber that depend on vulnerable ground infrastructure. While the storm may interrupt satellite signals temporarily, the space-based system remains undamaged and resumes service once weather clears—unlike terrestrial networks that may need weeks of repairs.</p>
+                <strong>Critical Storm Planning</strong>
+                During major storms, satellite internet often outlasts cable and fiber that depend on vulnerable ground infrastructure. While the storm may interrupt satellite signals temporarily, the space-based system remains undamaged and resumes service once weather clears—unlike terrestrial networks that may need weeks of repairs.
             </div>
 
             <h2>Why Storms Affect Satellite Signals</h2>
@@ -620,8 +622,8 @@
             </ol>
 
             <div class="emergency-tip">
-                <h3>Hurricane Survival Strategy</h3>
-                <p>Satellite internet often resumes faster than cable/fiber after hurricanes. While signals fail during the storm's peak, satellites remain undamaged in space. Once winds drop below 40mph and rain subsides, satellite service typically returns while ground networks await weeks of infrastructure repairs.</p>
+                <strong>Hurricane Survival Strategy</strong>
+                Satellite internet often resumes faster than cable/fiber after hurricanes. While signals fail during the storm's peak, satellites remain undamaged in space. Once winds drop below 40mph and rain subsides, satellite service typically returns while ground networks await weeks of infrastructure repairs.
             </div>
 
             <h2>Winter Storm Challenges</h2>
@@ -747,7 +749,7 @@
             </ol>
 
             <section class="mini-faq">
-                <h2>Frequently Asked Questions</h2>
+                <h3>Frequently Asked Questions</h3>
                 
                 <dl>
                     <dt>Will satellite internet work during a hurricane?</dt>
@@ -767,8 +769,8 @@
                 </dl>
             </section>
 
-            <div class="related-section">
-                <h3>Related Satellite Internet FAQs</h3>
+            <div class="related-faqs">
+                <h2>Related Satellite Internet FAQs</h2>
                 <ul>
                     <li><a href="does-rain-or-snow-affect-satellite-internet.html">Does Rain or Snow Affect Satellite Internet?</a></li>
                     <li><a href="can-trees-or-buildings-block-satellite-internet.html">Can Trees or Buildings Block Satellite Internet?</a></li>
