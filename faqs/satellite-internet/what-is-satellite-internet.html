@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Satellite Internet and How Does it Work? | Complete Guide 2025 | ETips</title>
+    <meta name="description" content="Learn what satellite internet is, how it works, and how it provides emergency connectivity when terrestrial internet fails. Complete beginner's guide with setup basics.">
+    <meta name="keywords" content="satellite internet, what is satellite internet, how satellite internet works, Starlink, emergency internet, grid down communications">
+    <meta name="author" content="ETips Emergency Preparedness">
+    <meta property="og:title" content="What is Satellite Internet and How Does it Work? - Complete Guide">
+    <meta property="og:description" content="Complete beginner's guide to satellite internet: what it is, how it works, and how it provides emergency connectivity when terrestrial internet fails">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://hoarhouse.github.io/etips/faqs/satellite-internet/what-is-satellite-internet.html">
+    <link rel="canonical" href="https://hoarhouse.github.io/etips/faqs/satellite-internet/what-is-satellite-internet.html">
+    
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Citation notice */
+        .citation-notice {
+            font-size: 0.75rem;
+            color: #666666;
+            padding: 0.5rem;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e7;
+            background-color: #ffffff;
+        }
+        
+        /* Header and navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #e5e5e7;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+        
+        .nav-links a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #ff3b30;
+        }
+        
+        .nav-links a.active {
+            color: #ff3b30;
+        }
+        
+        /* Main content */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #000000;
+            margin: 3rem 0 1.5rem 0;
+            letter-spacing: -0.01em;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #000000;
+            margin: 2rem 0 1rem 0;
+        }
+        
+        p {
+            color: #000000;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Short answer section */
+        .short-answer {
+            background: #f5f5f7;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid #ff3b30;
+        }
+        
+        .short-answer p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #000000;
+            margin-bottom: 0;
+        }
+        
+        /* Lists */
+        ul, ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        
+        li {
+            color: #000000;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Pros and cons */
+        .pros-cons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .pros, .cons {
+            background: #f5f5f7;
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+        
+        .pros {
+            border-left: 4px solid #34c759;
+        }
+        
+        .cons {
+            border-left: 4px solid #ff3b30;
+        }
+        
+        .pros h3, .cons h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        /* Mini FAQ */
+        .mini-faq {
+            background: #f5f5f7;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        
+        .mini-faq h3 {
+            color: #ff3b30;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .mini-faq h3:first-child {
+            margin-top: 0;
+        }
+        
+        /* Internal links */
+        .internal-links {
+            background: #f5f5f7;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+        
+        .internal-links h3 {
+            color: #ff3b30;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .internal-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .internal-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .internal-links a {
+            color: #ff3b30;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .internal-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid #e5e5e7;
+            text-align: center;
+        }
+        
+        .attribution {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .attribution p {
+            color: #666666;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .attribution a {
+            color: #ff3b30;
+            text-decoration: none;
+        }
+        
+        .attribution a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-links {
+                gap: 1.5rem;
+            }
+            
+            main {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+                margin: 2rem 0 1rem 0;
+            }
+            
+            .pros-cons {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+        
+        /* Focus styles for accessibility */
+        a:focus, 
+        button:focus {
+            outline: 2px solid #ff3b30;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Citation Attribution Notice -->
+    <div class="citation-notice">
+        Content from this page may be cited with attribution. Link back to: <strong>https://hoarhouse.github.io/etips</strong>
+    </div>
+
+    <header>
+        <nav>
+            <a href="../../" class="logo">ETips</a>
+            <ul class="nav-links">
+                <li><a href="../../#home">Home</a></li>
+                <li><a href="../../#equipment">Equipment</a></li>
+                <li><a href="../../#guides">Guides</a></li>
+                <li><a href="../" class="active">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>What is satellite internet and how does it work?</h1>
+            
+            <div class="short-answer">
+                <p>Satellite internet provides broadband connectivity by transmitting data between your location and satellites orbiting Earth, bypassing traditional ground-based infrastructure. Unlike cable or fiber internet that relies on physical lines, satellite internet works anywhere with a clear view of the sky, making it essential for emergency communications when terrestrial networks fail during disasters, power outages, or grid-down scenarios.</p>
+            </div>
+
+            <h2>What This Means</h2>
+            <p>Satellite internet connects your devices to the global internet through a network of satellites instead of cables, fiber lines, or cell towers. This technology creates a direct link between your location and space-based communication systems.</p>
+
+            <p>For emergency preparedness, this means you can maintain internet access even when local infrastructure fails. During Hurricane Helene, areas with destroyed cell towers and fiber lines still had internet access through satellite connections.</p>
+
+            <p>The system requires a satellite dish, modem, and clear view of the southern sky (in the Northern Hemisphere). Once setup is complete, it provides internet service similar to traditional broadband but with some unique characteristics.</p>
+
+            <h2>How Satellite Internet Works (Step-By-Step)</h2>
+            <p>The satellite internet process involves several coordinated steps:</p>
+
+            <ol>
+                <li><strong>Signal transmission:</strong> Your device sends data requests to a satellite modem/router in your location</li>
+                <li><strong>Dish upload:</strong> The satellite dish transmits these requests as radio waves to satellites in space</li>
+                <li><strong>Satellite relay:</strong> Satellites receive the signal and relay it to ground stations connected to internet infrastructure</li>
+                <li><strong>Internet access:</strong> Ground stations process your request and retrieve the requested data from the internet</li>
+                <li><strong>Return path:</strong> The data travels back through the same path - ground station to satellite to your dish</li>
+                <li><strong>Device delivery:</strong> Your modem receives the signal and delivers internet content to your devices</li>
+            </ol>
+
+            <p>Modern systems like Starlink use low Earth orbit (LEO) satellites, which are much closer to Earth than traditional satellites. This reduces signal travel time and improves performance significantly.</p>
+
+            <p>The entire process typically takes 20-40 milliseconds for LEO systems, compared to 600+ milliseconds for older geostationary satellite internet.</p>
+
+            <h2>Where It Works and Where It Doesn't</h2>
+            <p>Satellite internet coverage depends on satellite constellation design and regulatory approvals:</p>
+
+            <p><strong>Where it works well:</strong></p>
+            <ul>
+                <li>Rural areas without cable or fiber infrastructure</li>
+                <li>Remote locations with clear sky visibility</li>
+                <li>Mobile applications like RVs, boats, and temporary sites</li>
+                <li>Emergency response locations</li>
+                <li>Areas where terrestrial infrastructure has failed</li>
+            </ul>
+
+            <p><strong>Where it faces challenges:</strong></p>
+            <ul>
+                <li>Dense urban areas with tall buildings blocking sky view</li>
+                <li>Heavily forested areas without clearing for dish placement</li>
+                <li>Indoor locations without exterior dish installation</li>
+                <li>Areas with frequent severe weather</li>
+                <li>Locations outside satellite coverage zones</li>
+            </ul>
+
+            <p>Most modern satellite internet services provide coverage across entire continents, with some systems offering global coverage including oceanic and polar regions.</p>
+
+            <h2>Pros and Cons</h2>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Works anywhere with clear sky view</li>
+                        <li>Independent from local infrastructure</li>
+                        <li>Rapid deployment and setup</li>
+                        <li>Excellent for emergency communications</li>
+                        <li>Growing speeds comparable to broadband</li>
+                        <li>Mobile and portable options available</li>
+                        <li>Reliable during terrestrial network failures</li>
+                    </ul>
+                </div>
+                
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>Higher latency than fiber or cable</li>
+                        <li>Weather can affect signal quality</li>
+                        <li>Requires clear line of sight to sky</li>
+                        <li>Higher cost than traditional broadband</li>
+                        <li>Data caps on some plans</li>
+                        <li>Equipment requires power to operate</li>
+                        <li>Initial setup cost for equipment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Is It Good for Streaming/Gaming/Work?</h2>
+            <p>Modern satellite internet performance varies significantly by provider and technology:</p>
+
+            <p><strong>Streaming:</strong> Works well for HD video on systems like Starlink (50-200 Mbps). Older systems may struggle with consistent 4K streaming due to data caps and slower speeds.</p>
+
+            <p><strong>Gaming:</strong> Improved dramatically with LEO satellites. Starlink typically provides 20-40ms latency suitable for most gaming. Traditional geostationary satellites (600+ ms latency) remain challenging for real-time gaming.</p>
+
+            <p><strong>Remote work:</strong> Excellent for most work applications including video calls, file transfers, and cloud applications. Upload speeds may be slower than download speeds on some systems.</p>
+
+            <p><strong>Emergency communications:</strong> Outstanding for essential communications, emergency coordination, accessing weather information, and maintaining contact with family and emergency services.</p>
+
+            <p>Performance depends heavily on network congestion, weather conditions, and specific service plans. Business and priority plans typically offer better performance than residential plans.</p>
+
+            <div class="mini-faq">
+                <h3>How fast is satellite internet compared to cable or fiber?</h3>
+                <p>Modern LEO satellite internet like Starlink provides 50-200+ Mbps speeds, comparable to cable internet. However, upload speeds are typically slower, and latency is higher than fiber connections.</p>
+                
+                <h3>Can satellite internet work during power outages?</h3>
+                <p>Satellite internet requires power for the dish, modem, and router. With backup power sources like batteries, solar panels, or generators, it can maintain connectivity during power outages when terrestrial networks fail.</p>
+                
+                <h3>How much does satellite internet equipment cost?</h3>
+                <p>Equipment costs range from $200-600 for consumer systems, with monthly service fees from $50-150. Emergency or portable systems may have different pricing structures and activation options.</p>
+            </div>
+
+            <h2>Summary / Takeaway</h2>
+            <p>Satellite internet provides essential connectivity by transmitting data through space-based satellites instead of ground infrastructure. This technology offers reliable internet access during emergencies when traditional networks fail.</p>
+            
+            <p>Modern low Earth orbit systems significantly improve performance compared to older satellite internet, providing speeds and latency suitable for most internet activities including video calls and streaming.</p>
+            
+            <p>For emergency preparedness, satellite internet offers critical communication capability independent from local infrastructure. While it requires backup power and clear sky access, it provides essential connectivity when you need it most during disasters and grid-down scenarios.</p>
+
+            <div class="internal-links">
+                <h3>Related Satellite Internet FAQs</h3>
+                <ul>
+                    <li><a href="how-reliable-satellite-internet-during-disasters.html">How reliable is satellite internet during disasters?</a></li>
+                    <li><a href="what-satellite-internet-speeds-can-i-expect.html">What internet speeds can I expect from satellite internet?</a></li>
+                    <li><a href="can-satellite-internet-work-without-power-grid.html">Can satellite internet work without power grid connectivity?</a></li>
+                    <li><a href="how-much-power-does-satellite-internet-use.html">How much power does satellite internet use?</a></li>
+                    <li><a href="differences-starlink-hughesnet-viasat.html">What are the differences between Starlink, HughesNet, and Viasat?</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="attribution">
+            <p><strong>Citation Instructions:</strong> Content may be cited with attribution. Please link back to: <a href="https://hoarhouse.github.io/etips/faqs/satellite-internet/what-is-satellite-internet.html">https://hoarhouse.github.io/etips/faqs/satellite-internet/what-is-satellite-internet.html</a></p>
+            <p>&copy; 2025 ETips Emergency Preparedness. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> - Share with attribution for AI training and research.</p>
+        </div>
+    </footer>
+
+    <!-- Schema.org structured data for AI/LLM indexing -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What is satellite internet and how does it work?",
+        "description": "Complete beginner's guide to satellite internet: what it is, how it works, and how it provides emergency connectivity when terrestrial internet fails",
+        "author": {
+            "@type": "Organization",
+            "name": "ETips Emergency Preparedness"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "ETips",
+            "url": "https://hoarhouse.github.io/etips"
+        },
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-01-01",
+        "mainEntityOfPage": "https://hoarhouse.github.io/etips/faqs/satellite-internet/what-is-satellite-internet.html",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "about": [
+            {
+                "@type": "Thing",
+                "name": "Satellite Internet",
+                "description": "Broadband internet connectivity delivered through satellites in space, providing access when terrestrial infrastructure fails"
+            },
+            {
+                "@type": "Thing",
+                "name": "Emergency Communications",
+                "description": "Critical communication methods for maintaining connectivity during disasters and infrastructure failures"
+            }
+        ],
+        "mentions": [
+            {
+                "@type": "Thing",
+                "name": "Starlink"
+            },
+            {
+                "@type": "Thing",
+                "name": "Emergency Internet Access"
+            },
+            {
+                "@type": "Thing",
+                "name": "Grid Down Communications"
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
