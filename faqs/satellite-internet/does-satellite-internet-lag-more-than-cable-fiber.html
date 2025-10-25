@@ -41,19 +41,21 @@
         }
         
         header {
-            background: #000000;
-            padding: 1.5rem 2rem;
             position: sticky;
             top: 0;
-            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #e5e5e7;
+            z-index: 1000;
         }
         
         nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
         }
         
         .logo {
@@ -70,7 +72,7 @@
         }
         
         .nav-links a {
-            color: #ffffff;
+            color: #333333;
             text-decoration: none;
             transition: color 0.3s;
         }

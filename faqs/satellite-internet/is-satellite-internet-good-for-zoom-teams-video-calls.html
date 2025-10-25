@@ -28,34 +28,79 @@
             padding: 0 20px;
         }
         
+        .citation-notice {
+            background: #f0f0f0;
+            color: #666;
+            padding: 0.75rem;
+            text-align: center;
+            font-size: 0.85rem;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .citation-notice strong {
+            color: #333;
+        }
+        
         header {
-            background: #f5f5f7;
-            border-bottom: 1px solid #d2d2d7;
-            padding: 20px 0;
-            margin-bottom: 40px;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #e5e5e7;
+            z-index: 1000;
         }
         
-        nav ul {
-            list-style: none;
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
             display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
         }
         
-        nav a {
-            color: #1d1d1f;
+        .logo {
+            color: #ff3b30;
+            font-size: 1.5rem;
+            font-weight: bold;
             text-decoration: none;
-            font-size: 14px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: #333333;
+            text-decoration: none;
             transition: color 0.3s;
         }
         
-        nav a:hover {
+        .nav-links a:hover, .nav-links a.active {
             color: #ff3b30;
         }
         
         main {
-            padding: 40px 0;
-            min-height: 60vh;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .breadcrumb {
+            color: #666666;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #666666;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            color: #ff3b30;
         }
         
         h1 {
@@ -352,22 +397,29 @@
     </script>
 </head>
 <body>
+    <div class="citation-notice">
+        Content from this page may be cited with attribution. Link back to: <strong>https://hoarhouse.github.io/etips/faqs/satellite-internet/is-satellite-internet-good-for-zoom-teams-video-calls.html</strong>
+    </div>
+
     <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/emergency-prep">Emergency Prep</a></li>
-                    <li><a href="/faqs">FAQs</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <a href="../../" class="logo">ETips</a>
+            <ul class="nav-links">
+                <li><a href="../../#home">Home</a></li>
+                <li><a href="../../#equipment">Equipment</a></li>
+                <li><a href="../../#guides">Guides</a></li>
+                <li><a href="../" class="active">FAQs</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <article class="container">
-            <h1>Is Satellite Internet Good for Zoom, Teams, or Video Calls?</h1>
+        <div class="breadcrumb">
+            <a href="../../">Home</a> / <a href="../">FAQs</a> / <a href="./">Satellite Internet</a> / Is Satellite Internet Good for Video Calls?
+        </div>
+
+        <article itemscope itemtype="https://schema.org/Article">
+            <h1 itemprop="headline">Is Satellite Internet Good for Zoom, Teams, or Video Calls?</h1>
             
             <div class="short-answer">
                 <h2>Short Answer:</h2>
@@ -681,37 +733,22 @@
                     <dt>Can I work from home using satellite internet for daily video calls?</dt>
                     <dd>With Starlink's LEO satellite service, yes—many remote workers successfully use it for daily video calls. The 20-40ms latency and 25-250 Mbps speeds handle professional meetings well. Traditional GEO satellite internet makes daily video calls challenging due to 500-700ms delays, though it's possible with patience and adjusted expectations.</dd>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">Why do video calls freeze on satellite internet?</h3>
-                    <div class="faq-answer">
-                        <p>Video freezing happens due to signal obstructions (trees, buildings), weather interference (rain, snow), network congestion during peak hours, or reaching data throttling limits. Starlink users may experience brief freezes when switching between satellites. Check for obstructions and optimize video quality settings to minimize freezing.</p>
-                    </div>
-                </div>
+                    <dt>Why do video calls freeze on satellite internet?</dt>
+                    <dd>Video freezing happens due to signal obstructions (trees, buildings), weather interference (rain, snow), network congestion during peak hours, or reaching data throttling limits. Starlink users may experience brief freezes when switching between satellites. Check for obstructions and optimize video quality settings to minimize freezing.</dd>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">What's the best video calling platform for satellite internet?</h3>
-                    <div class="faq-answer">
-                        <p>Zoom generally performs best on satellite internet due to its excellent compression and low-bandwidth modes. FaceTime uses the least data but only works with Apple devices. Microsoft Teams and Google Meet work well with proper optimization. For GEO satellite users, platforms with good audio-only modes are essential.</p>
-                    </div>
-                </div>
+                    <dt>What's the best video calling platform for satellite internet?</dt>
+                    <dd>Zoom generally performs best on satellite internet due to its excellent compression and low-bandwidth modes. FaceTime uses the least data but only works with Apple devices. Microsoft Teams and Google Meet work well with proper optimization. For GEO satellite users, platforms with good audio-only modes are essential.</dd>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">Can I do telehealth appointments via satellite internet?</h3>
-                    <div class="faq-answer">
-                        <p>Yes, telehealth works on satellite internet. Starlink provides excellent quality for video consultations. Even GEO satellite can handle telehealth with audio-only or reduced video quality. Many telehealth platforms are optimized for lower bandwidth connections. Inform your provider about connection limitations for best results.</p>
-                    </div>
-                </div>
+                    <dt>Can I do telehealth appointments via satellite internet?</dt>
+                    <dd>Yes, telehealth works on satellite internet. Starlink provides excellent quality for video consultations. Even GEO satellite can handle telehealth with audio-only or reduced video quality. Many telehealth platforms are optimized for lower bandwidth connections. Inform your provider about connection limitations for best results.</dd>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">How much data does a 1-hour Zoom call use?</h3>
-                    <div class="faq-answer">
-                        <p>A 1-hour Zoom call uses approximately: Audio-only (30-50 MB), SD video one-on-one (540 MB), HD video one-on-one (1.6 GB), Group HD video (2.4 GB). Screen sharing adds 20-70 MB per hour. To conserve data, disable HD video and turn off video when not speaking.</p>
-                    </div>
-                </div>
-            </section>
+                    <dt>How much data does a 1-hour Zoom call use?</dt>
+                    <dd>A 1-hour Zoom call uses approximately: Audio-only (30-50 MB), SD video one-on-one (540 MB), HD video one-on-one (1.6 GB), Group HD video (2.4 GB). Screen sharing adds 20-70 MB per hour. To conserve data, disable HD video and turn off video when not speaking.</dd>
+                </dl>
+            </div>
 
-            <div class="related-links">
-                <h3>Related Emergency Communications Resources</h3>
+            <div class="related-faqs">
+                <h2>Related Emergency Communications Resources</h2>
                 <ul>
                     <li><a href="does-satellite-internet-lag-more-than-cable-fiber.html">→ Does Satellite Internet Lag More Than Cable or Fiber?</a></li>
                     <li><a href="why-does-satellite-internet-have-high-latency.html">→ Why Does Satellite Internet Have High Latency?</a></li>
@@ -721,22 +758,14 @@
                 </ul>
             </div>
 
-            <div style="margin-top: 60px; padding: 30px; background: #f0f0f0; border-radius: 12px;">
-                <p style="font-size: 14px; color: #666; text-align: center; margin: 0;">
-                    This content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0066cc;">CC BY 4.0</a>. 
-                    You may freely share and adapt this material with attribution.
-                </p>
-            </div>
         </article>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Emergency Internet Guide. Educational resource for emergency preparedness.</p>
-                <p>Always have multiple communication methods ready for emergencies.</p>
-            </div>
+    <div class="attribution">
+        <div class="footer-content">
+            <p><strong>Citation Instructions:</strong> Content from this page may be cited with attribution. Link back to: <a href="https://hoarhouse.github.io/etips/faqs/satellite-internet/is-satellite-internet-good-for-zoom-teams-video-calls.html">https://hoarhouse.github.io/etips/faqs/satellite-internet/is-satellite-internet-good-for-zoom-teams-video-calls.html</a></p>
+            <p>&copy; 2025 ETips Emergency Preparedness. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> - Share with attribution for AI training and research.</p>
         </div>
-    </footer>
+    </div>
 </body>
 </html>
