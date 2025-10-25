@@ -149,11 +149,11 @@
         }
         
         ul, ol {
-            margin-left: 30px;
+            margin-left: 2rem;
         }
         
         li {
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
         }
         
         .comparison-table {
@@ -176,9 +176,9 @@
         }
         
         .comparison-table td {
-            padding: 15px;
-            border-bottom: 1px solid #d2d2d7;
-            font-size: 15px;
+            padding: 1rem;
+            border-bottom: 1px solid #e5e5e7;
+            font-size: 0.9rem;
         }
         
         .comparison-table tr:last-child td {
@@ -190,11 +190,11 @@
         }
         
         .emergency-tip {
-            background: #fff3cd;
+            background-color: #fff3cd;
             border-left: 4px solid #ff9500;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0.5rem;
         }
         
         .emergency-tip h3 {
@@ -202,7 +202,7 @@
             margin-top: 0;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 0.625rem;
         }
         
         .emergency-tip h3:before {
@@ -258,19 +258,19 @@
         }
         
         .mini-faq dt {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 600;
-            margin-bottom: 15px;
-            color: #1d1d1f;
+            margin-bottom: 1rem;
+            color: #000000;
         }
         
         .mini-faq dd {
-            font-size: 17px;
+            font-size: 1.0625rem;
             line-height: 1.65;
-            color: #1d1d1f;
-            margin-bottom: 30px;
+            color: #333333;
+            margin-bottom: 2rem;
             margin-left: 0;
-            padding-bottom: 30px;
+            padding-bottom: 2rem;
             border-bottom: 1px solid #e5e5e7;
         }
         
@@ -287,8 +287,8 @@
         
         .related-section h3 {
             margin-top: 0;
-            margin-bottom: 20px;
-            color: #1d1d1f;
+            margin-bottom: 1.25rem;
+            color: #000000;
         }
         
         .related-section ul {
@@ -301,24 +301,24 @@
         }
         
         .related-section a {
-            color: #0066cc;
+            color: #ff3b30;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 1.0625rem;
             display: flex;
             align-items: center;
-            padding: 12px 0;
-            border-bottom: 1px solid #d2d2d7;
-            transition: color 0.3s;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e5e5e7;
+            transition: color 0.2s ease;
         }
         
         .related-section a::before {
             content: "→";
-            margin-right: 10px;
+            margin-right: 0.625rem;
             font-weight: 600;
         }
         
         .related-section a:hover {
-            color: #0051a3;
+            color: #d70000;
         }
         
         .related-section li:last-child a {
@@ -349,20 +349,24 @@
         
         @media (max-width: 768px) {
             h1 {
-                font-size: 36px;
+                font-size: 2.25rem;
             }
             
             h2 {
-                font-size: 28px;
-                margin-top: 40px;
+                font-size: 1.75rem;
+                margin-top: 2.5rem;
             }
             
             h3 {
-                font-size: 22px;
+                font-size: 1.375rem;
             }
             
             .short-answer {
-                font-size: 19px;
+                font-size: 1.125rem;
+            }
+            
+            .nav-links {
+                gap: 1.5rem;
             }
             
             .pros-cons-grid {
@@ -376,11 +380,6 @@
             .comparison-table th,
             .comparison-table td {
                 padding: 10px;
-            }
-            
-            nav ul {
-                flex-wrap: wrap;
-                gap: 15px;
             }
         }
     </style>
