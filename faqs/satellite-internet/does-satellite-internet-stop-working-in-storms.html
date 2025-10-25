@@ -6,7 +6,7 @@
     <meta name="description" content="Learn if satellite internet stops working during storms. Understand storm impacts, outage likelihood, and emergency connectivity strategies during severe weather events.">
     <meta name="keywords" content="satellite internet storms, thunderstorm outages, hurricane satellite internet, emergency storm connectivity, weather outages">
     <title>Does Satellite Internet Stop Working in Storms? | Storm Impact Guide</title>
-    <link rel="canonical" href="https://www.yoursite.com/faqs/satellite-internet/does-satellite-internet-stop-working-in-storms">
+    <link rel="canonical" href="https://etips.org/faqs/satellite-internet/does-satellite-internet-stop-working-in-storms">
     
     <style>
         * {
@@ -28,29 +28,78 @@
             padding: 0 20px;
         }
         
-        header {
+        .citation-banner {
             background: #f5f5f7;
             border-bottom: 1px solid #d2d2d7;
-            padding: 20px 0;
-            margin-bottom: 40px;
+            padding: 12px 0;
+            font-size: 13px;
+            color: #6e6e73;
+            text-align: center;
+        }
+        
+        .citation-banner a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .citation-banner a:hover {
+            text-decoration: underline;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid #d2d2d7;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            padding: 16px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
         }
         
         nav ul {
             list-style: none;
             display: flex;
             gap: 30px;
-            flex-wrap: wrap;
         }
         
         nav a {
-            color: #1d1d1f;
+            color: #000000;
             text-decoration: none;
             font-size: 14px;
             transition: color 0.3s;
         }
         
         nav a:hover {
-            color: #ff3b30;
+            color: #0066cc;
+        }
+        
+        .breadcrumb {
+            padding: 20px 0;
+            font-size: 14px;
+            color: #6e6e73;
+        }
+        
+        .breadcrumb a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
         
         main {
@@ -120,7 +169,7 @@
         }
         
         .comparison-table th {
-            background: #ff3b30;
+            background: #0066cc;
             color: white;
             padding: 15px;
             text-align: left;
@@ -144,14 +193,14 @@
         
         .emergency-tip {
             background: #fff3cd;
-            border-left: 4px solid #ff3b30;
+            border-left: 4px solid #ff9500;
             padding: 20px;
             margin: 30px 0;
             border-radius: 8px;
         }
         
         .emergency-tip h3 {
-            color: #ff3b30;
+            color: #ff9500;
             margin-top: 0;
             display: flex;
             align-items: center;
@@ -170,93 +219,111 @@
             margin: 30px 0;
         }
         
-        .pros, .cons {
+        .pros-card, .cons-card {
             padding: 25px;
             border-radius: 12px;
         }
         
-        .pros {
-            background: #d1f4d1;
-            border: 1px solid #4caf50;
+        .pros-card {
+            background: #f0f9f4;
+            border: 1px solid #34c759;
         }
         
-        .cons {
-            background: #ffd1d1;
+        .cons-card {
+            background: #fef2f2;
             border: 1px solid #ff3b30;
         }
         
-        .pros h3 {
-            color: #2e7d32;
+        .pros-card h3 {
+            color: #34c759;
             margin-bottom: 15px;
         }
         
-        .cons h3 {
-            color: #c62828;
+        .cons-card h3 {
+            color: #ff3b30;
             margin-bottom: 15px;
         }
         
-        .faq-section {
+        .mini-faq {
             margin-top: 60px;
             padding-top: 30px;
             border-top: 1px solid #d2d2d7;
         }
         
-        .faq-item {
+        .mini-faq h2 {
+            margin-top: 0;
             margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #e5e5e7;
         }
         
-        .faq-item:last-child {
-            border-bottom: none;
+        .mini-faq dl {
+            margin-bottom: 0;
         }
         
-        .faq-question {
+        .mini-faq dt {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 15px;
             color: #1d1d1f;
         }
         
-        .faq-answer {
+        .mini-faq dd {
             font-size: 17px;
             line-height: 1.65;
             color: #1d1d1f;
+            margin-bottom: 30px;
+            margin-left: 0;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e7;
         }
         
-        .related-links {
+        .mini-faq dd:last-child {
+            border-bottom: none;
+        }
+        
+        .related-section {
             margin-top: 60px;
             padding: 30px;
             background: #f5f5f7;
             border-radius: 12px;
         }
         
-        .related-links h3 {
+        .related-section h3 {
+            margin-top: 0;
             margin-bottom: 20px;
             color: #1d1d1f;
         }
         
-        .related-links ul {
+        .related-section ul {
             list-style: none;
             margin-left: 0;
         }
         
-        .related-links a {
+        .related-section li {
+            margin-bottom: 0;
+        }
+        
+        .related-section a {
             color: #0066cc;
             text-decoration: none;
             font-size: 17px;
             display: flex;
             align-items: center;
-            padding: 10px 0;
+            padding: 12px 0;
             border-bottom: 1px solid #d2d2d7;
             transition: color 0.3s;
         }
         
-        .related-links a:hover {
-            color: #ff3b30;
+        .related-section a::before {
+            content: "→";
+            margin-right: 10px;
+            font-weight: 600;
         }
         
-        .related-links li:last-child a {
+        .related-section a:hover {
+            color: #0051a3;
+        }
+        
+        .related-section li:last-child a {
             border-bottom: none;
         }
         
@@ -271,6 +338,15 @@
             text-align: center;
             color: #6e6e73;
             font-size: 14px;
+        }
+        
+        .footer-content a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .footer-content a:hover {
+            text-decoration: underline;
         }
         
         @media (max-width: 768px) {
@@ -303,6 +379,11 @@
             .comparison-table td {
                 padding: 10px;
             }
+            
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
         }
     </style>
     
@@ -322,18 +403,35 @@
     </script>
 </head>
 <body>
+    <div class="citation-banner">
+        <div class="container">
+            <p>📚 This guide is part of the <a href="/etips">Emergency Telecommunications & Internet Preparedness (ETips)</a> resource. Freely available under CC BY 4.0.</p>
+        </div>
+    </div>
+
     <header>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/emergency-prep">Emergency Prep</a></li>
-                    <li><a href="/faqs">FAQs</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="header-content">
+                <a href="/etips" class="logo">ETips</a>
+                <nav>
+                    <ul>
+                        <li><a href="/etips">Guide</a></li>
+                        <li><a href="/etips/mobile-cellular">Mobile</a></li>
+                        <li><a href="/etips/internet-access">Internet</a></li>
+                        <li><a href="/etips/power-solutions">Power</a></li>
+                        <li><a href="/etips/radios">Radios</a></li>
+                        <li><a href="/etips/faqs">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/etips">Home</a> › <a href="/etips/faqs">FAQs</a> › <a href="/etips/faqs/satellite-internet">Satellite Internet</a> › Storm Impact
+        </div>
+    </div>
 
     <main>
         <article class="container">
@@ -599,7 +697,7 @@
             </ul>
 
             <div class="pros-cons-grid">
-                <div class="pros">
+                <div class="pros-card">
                     <h3>✓ Storm Advantages</h3>
                     <ul>
                         <li>Satellites unaffected by ground damage</li>
@@ -610,7 +708,7 @@
                         <li>Mobile units can relocate</li>
                     </ul>
                 </div>
-                <div class="cons">
+                <div class="cons-card">
                     <h3>✗ Storm Vulnerabilities</h3>
                     <ul>
                         <li>Heavy rain causes outages</li>
@@ -654,60 +752,42 @@
                 <li>Test performance and document issues</li>
             </ol>
 
-            <section class="faq-section">
+            <section class="mini-faq">
                 <h2>Frequently Asked Questions</h2>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">Will satellite internet work during a hurricane?</h3>
-                    <div class="faq-answer">
-                        <p>Satellite internet will fail during a hurricane's most intense periods (eye wall passage) but often works during outer bands and recovers quickly after the storm passes. Many users report having satellite connectivity restored within hours of a hurricane, while cable and fiber networks remain down for weeks due to infrastructure damage.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">How long do storm outages typically last?</h3>
-                    <div class="faq-answer">
-                        <p>Thunderstorm outages typically last 5-30 minutes for the heaviest rain. LEO satellites like Starlink recover within 1-5 minutes after rain lightens, while GEO satellites may take 10-30 minutes. Winter storm outages depend on snow/ice removal—could be minutes with a heater or days if ice isn't cleared.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Is it safe to use satellite internet during lightning?</h3>
-                    <div class="faq-answer">
-                        <p>While satellite dishes have grounding protection, it's safest to disconnect equipment during severe lightning. Modern installations include surge suppressors and proper grounding, but direct strikes can still cause damage. For safety, unplug the power and ethernet cables during intense electrical storms.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Which storms are worst for satellite internet?</h3>
-                    <div class="faq-answer">
-                        <p>Ice storms are typically worst because they create persistent signal blockage requiring manual intervention. Torrential rain (50+ mm/hour) causes complete outages but passes quickly. Hurricanes cause extended outages but don't damage satellites. Moderate thunderstorms are most common but usually manageable.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Can I predict when storms will knock out my satellite internet?</h3>
-                    <div class="faq-answer">
-                        <p>Yes, weather radar helps predict outages. When radar shows red/purple (heavy precipitation) approaching your location, expect service degradation. Rain rates above 30mm/hour typically cause problems. Most satellite modems show signal strength meters—when levels drop below -80 dBm, outages are imminent.</p>
-                    </div>
-                </div>
+                <dl>
+                    <dt>Will satellite internet work during a hurricane?</dt>
+                    <dd>Satellite internet will fail during a hurricane's most intense periods (eye wall passage) but often works during outer bands and recovers quickly after the storm passes. Many users report having satellite connectivity restored within hours of a hurricane, while cable and fiber networks remain down for weeks due to infrastructure damage.</dd>
+                    
+                    <dt>How long do storm outages typically last?</dt>
+                    <dd>Thunderstorm outages typically last 5-30 minutes for the heaviest rain. LEO satellites like Starlink recover within 1-5 minutes after rain lightens, while GEO satellites may take 10-30 minutes. Winter storm outages depend on snow/ice removal—could be minutes with a heater or days if ice isn't cleared.</dd>
+                    
+                    <dt>Is it safe to use satellite internet during lightning?</dt>
+                    <dd>While satellite dishes have grounding protection, it's safest to disconnect equipment during severe lightning. Modern installations include surge suppressors and proper grounding, but direct strikes can still cause damage. For safety, unplug the power and ethernet cables during intense electrical storms.</dd>
+                    
+                    <dt>Which storms are worst for satellite internet?</dt>
+                    <dd>Ice storms are typically worst because they create persistent signal blockage requiring manual intervention. Torrential rain (50+ mm/hour) causes complete outages but passes quickly. Hurricanes cause extended outages but don't damage satellites. Moderate thunderstorms are most common but usually manageable.</dd>
+                    
+                    <dt>Can I predict when storms will knock out my satellite internet?</dt>
+                    <dd>Yes, weather radar helps predict outages. When radar shows red/purple (heavy precipitation) approaching your location, expect service degradation. Rain rates above 30mm/hour typically cause problems. Most satellite modems show signal strength meters—when levels drop below -80 dBm, outages are imminent.</dd>
+                </dl>
             </section>
 
-            <div class="related-links">
-                <h3>Related Storm & Emergency Resources</h3>
+            <div class="related-section">
+                <h3>Related Satellite Internet FAQs</h3>
                 <ul>
-                    <li><a href="does-rain-or-snow-affect-satellite-internet.html">→ Does Rain or Snow Affect Satellite Internet?</a></li>
-                    <li><a href="how-can-i-improve-satellite-internet-signal-quality.html">→ How to Improve Signal Quality</a></li>
-                    <li><a href="does-starlink-work-bad-weather.html">→ Does Starlink Work in Bad Weather?</a></li>
-                    <li><a href="../emergency-prep/hurricane-internet-preparation.html">→ Hurricane Internet Preparation</a></li>
-                    <li><a href="../emergency-communications/backup-communication-methods.html">→ Backup Communication Methods</a></li>
+                    <li><a href="does-rain-or-snow-affect-satellite-internet.html">Does Rain or Snow Affect Satellite Internet?</a></li>
+                    <li><a href="can-trees-or-buildings-block-satellite-internet.html">Can Trees or Buildings Block Satellite Internet?</a></li>
+                    <li><a href="how-can-i-improve-satellite-internet-signal-quality.html">How to Improve Signal Quality</a></li>
+                    <li><a href="is-satellite-internet-fast-enough-for-streaming-netflix.html">Is Satellite Internet Fast Enough for Netflix?</a></li>
+                    <li><a href="does-satellite-internet-lag-more-than-cable-fiber.html">Does Satellite Internet Have More Lag?</a></li>
                 </ul>
             </div>
 
             <div style="margin-top: 60px; padding: 30px; background: #f0f0f0; border-radius: 12px;">
                 <p style="font-size: 14px; color: #666; text-align: center; margin: 0;">
-                    This content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0066cc;">CC BY 4.0</a>. 
-                    You may freely share and adapt this material with attribution.
+                    📄 Content License: <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0066cc;">CC BY 4.0</a> | You may freely share and adapt this material with attribution<br>
+                    Part of the <a href="/etips" style="color: #0066cc;">Emergency Telecommunications & Internet Preparedness (ETips)</a> guide
                 </p>
             </div>
         </article>
