@@ -6,7 +6,7 @@
     <meta name="description" content="Learn how to improve satellite internet signal quality. Expert tips for optimizing performance, reducing interference, and maintaining reliable emergency connectivity.">
     <meta name="keywords" content="improve satellite internet signal, optimize satellite connection, signal quality tips, boost satellite performance, emergency connectivity">
     <title>How Can I Improve Satellite Internet Signal Quality? | Optimization Guide</title>
-    <link rel="canonical" href="https://www.yoursite.com/faqs/satellite-internet/how-can-i-improve-satellite-internet-signal-quality">
+    <link rel="canonical" href="https://etips.org/faqs/satellite-internet/how-can-i-improve-satellite-internet-signal-quality">
     
     <style>
         * {
@@ -28,29 +28,78 @@
             padding: 0 20px;
         }
         
-        header {
+        .citation-banner {
             background: #f5f5f7;
             border-bottom: 1px solid #d2d2d7;
-            padding: 20px 0;
-            margin-bottom: 40px;
+            padding: 12px 0;
+            font-size: 13px;
+            color: #6e6e73;
+            text-align: center;
+        }
+        
+        .citation-banner a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .citation-banner a:hover {
+            text-decoration: underline;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid #d2d2d7;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            padding: 16px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
         }
         
         nav ul {
             list-style: none;
             display: flex;
             gap: 30px;
-            flex-wrap: wrap;
         }
         
         nav a {
-            color: #1d1d1f;
+            color: #000000;
             text-decoration: none;
             font-size: 14px;
             transition: color 0.3s;
         }
         
         nav a:hover {
-            color: #ff3b30;
+            color: #0066cc;
+        }
+        
+        .breadcrumb {
+            padding: 20px 0;
+            font-size: 14px;
+            color: #6e6e73;
+        }
+        
+        .breadcrumb a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
         
         main {
@@ -120,7 +169,7 @@
         }
         
         .comparison-table th {
-            background: #ff3b30;
+            background: #0066cc;
             color: white;
             padding: 15px;
             text-align: left;
@@ -144,14 +193,14 @@
         
         .emergency-tip {
             background: #fff3cd;
-            border-left: 4px solid #ff3b30;
+            border-left: 4px solid #ff9500;
             padding: 20px;
             margin: 30px 0;
             border-radius: 8px;
         }
         
         .emergency-tip h3 {
-            color: #ff3b30;
+            color: #ff9500;
             margin-top: 0;
             display: flex;
             align-items: center;
@@ -170,93 +219,111 @@
             margin: 30px 0;
         }
         
-        .pros, .cons {
+        .pros-card, .cons-card {
             padding: 25px;
             border-radius: 12px;
         }
         
-        .pros {
-            background: #d1f4d1;
-            border: 1px solid #4caf50;
+        .pros-card {
+            background: #f0f9f4;
+            border: 1px solid #34c759;
         }
         
-        .cons {
-            background: #ffd1d1;
+        .cons-card {
+            background: #fef2f2;
             border: 1px solid #ff3b30;
         }
         
-        .pros h3 {
-            color: #2e7d32;
+        .pros-card h3 {
+            color: #34c759;
             margin-bottom: 15px;
         }
         
-        .cons h3 {
-            color: #c62828;
+        .cons-card h3 {
+            color: #ff3b30;
             margin-bottom: 15px;
         }
         
-        .faq-section {
+        .mini-faq {
             margin-top: 60px;
             padding-top: 30px;
             border-top: 1px solid #d2d2d7;
         }
         
-        .faq-item {
+        .mini-faq h2 {
+            margin-top: 0;
             margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #e5e5e7;
         }
         
-        .faq-item:last-child {
-            border-bottom: none;
+        .mini-faq dl {
+            margin-bottom: 0;
         }
         
-        .faq-question {
+        .mini-faq dt {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 15px;
             color: #1d1d1f;
         }
         
-        .faq-answer {
+        .mini-faq dd {
             font-size: 17px;
             line-height: 1.65;
             color: #1d1d1f;
+            margin-bottom: 30px;
+            margin-left: 0;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e7;
         }
         
-        .related-links {
+        .mini-faq dd:last-child {
+            border-bottom: none;
+        }
+        
+        .related-section {
             margin-top: 60px;
             padding: 30px;
             background: #f5f5f7;
             border-radius: 12px;
         }
         
-        .related-links h3 {
+        .related-section h3 {
+            margin-top: 0;
             margin-bottom: 20px;
             color: #1d1d1f;
         }
         
-        .related-links ul {
+        .related-section ul {
             list-style: none;
             margin-left: 0;
         }
         
-        .related-links a {
+        .related-section li {
+            margin-bottom: 0;
+        }
+        
+        .related-section a {
             color: #0066cc;
             text-decoration: none;
             font-size: 17px;
             display: flex;
             align-items: center;
-            padding: 10px 0;
+            padding: 12px 0;
             border-bottom: 1px solid #d2d2d7;
             transition: color 0.3s;
         }
         
-        .related-links a:hover {
-            color: #ff3b30;
+        .related-section a::before {
+            content: "→";
+            margin-right: 10px;
+            font-weight: 600;
         }
         
-        .related-links li:last-child a {
+        .related-section a:hover {
+            color: #0051a3;
+        }
+        
+        .related-section li:last-child a {
             border-bottom: none;
         }
         
@@ -271,6 +338,15 @@
             text-align: center;
             color: #6e6e73;
             font-size: 14px;
+        }
+        
+        .footer-content a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .footer-content a:hover {
+            text-decoration: underline;
         }
         
         @media (max-width: 768px) {
@@ -303,6 +379,11 @@
             .comparison-table td {
                 padding: 10px;
             }
+            
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
         }
     </style>
     
@@ -322,18 +403,35 @@
     </script>
 </head>
 <body>
+    <div class="citation-banner">
+        <div class="container">
+            <p>📚 This guide is part of the <a href="/etips">Emergency Telecommunications & Internet Preparedness (ETips)</a> resource. Freely available under CC BY 4.0.</p>
+        </div>
+    </div>
+
     <header>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/emergency-prep">Emergency Prep</a></li>
-                    <li><a href="/faqs">FAQs</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="header-content">
+                <a href="/etips" class="logo">ETips</a>
+                <nav>
+                    <ul>
+                        <li><a href="/etips">Guide</a></li>
+                        <li><a href="/etips/mobile-cellular">Mobile</a></li>
+                        <li><a href="/etips/internet-access">Internet</a></li>
+                        <li><a href="/etips/power-solutions">Power</a></li>
+                        <li><a href="/etips/radios">Radios</a></li>
+                        <li><a href="/etips/faqs">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/etips">Home</a> › <a href="/etips/faqs">FAQs</a> › <a href="/etips/faqs/satellite-internet">Satellite Internet</a> › Signal Optimization
+        </div>
+    </div>
 
     <main>
         <article class="container">
@@ -640,7 +738,7 @@
             </ul>
 
             <div class="pros-cons-grid">
-                <div class="pros">
+                <div class="pros-card">
                     <h3>✓ Optimization Benefits</h3>
                     <ul>
                         <li>50-200% speed improvements possible</li>
@@ -651,7 +749,7 @@
                         <li>Consistent performance</li>
                     </ul>
                 </div>
-                <div class="cons">
+                <div class="cons-card">
                     <h3>✗ Optimization Limits</h3>
                     <ul>
                         <li>Cannot overcome physics</li>
@@ -715,60 +813,42 @@
                 </tbody>
             </table>
 
-            <section class="faq-section">
+            <section class="mini-faq">
                 <h2>Frequently Asked Questions</h2>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">Will a larger satellite dish improve my signal?</h3>
-                    <div class="faq-answer">
-                        <p>Yes, a larger dish provides 3-6 dB more signal gain, significantly improving performance in bad weather. Upgrading from a 74cm to 1.2m dish can reduce weather-related outages by 50-70%. However, larger dishes cost more, require professional installation, and need stronger mounting. For Starlink, the dish size is fixed, but the rectangular dish performs better than the round version.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">How often should I realign my satellite dish?</h3>
-                    <div class="faq-answer">
-                        <p>Check alignment every 6 months or after severe weather. GEO satellites require precise alignment—even 1-2 degrees off significantly degrades signal. Starlink self-aligns but should be checked for obstructions quarterly. Signs you need realignment: degraded speeds, weather sensitivity increases, or signal strength below -70 dBm.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Can I boost satellite internet signal with an amplifier?</h3>
-                    <div class="faq-answer">
-                        <p>Inline amplifiers can help with long cable runs (over 100 feet) but won't improve a weak satellite signal. They compensate for cable loss, not poor dish alignment or obstructions. Incorrectly used amplifiers can actually worsen performance by amplifying noise. Focus on dish positioning and cable quality first.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Why does my signal strength vary throughout the day?</h3>
-                    <div class="faq-answer">
-                        <p>Daily variations occur from: atmospheric changes (temperature/humidity), sun interference during equinoxes, network congestion during peak hours (5-9 PM), and for Starlink, different satellites passing overhead. Temperature changes can also cause dish movement if mounting expands/contracts. Document patterns to identify if it's environmental or network-related.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">What signal strength reading indicates a problem?</h3>
-                    <div class="faq-answer">
-                        <p>For GEO satellites, signal strength below -75 dBm indicates problems; below -80 dBm causes frequent outages. SNR below 8 dB means too much noise. For Starlink, the app shows "Good," "Marginal," or "Poor"—anything below "Good" needs attention. During emergencies, even marginal signals (around -80 dBm) can maintain basic connectivity.</p>
-                    </div>
-                </div>
+                <dl>
+                    <dt>Will a larger satellite dish improve my signal?</dt>
+                    <dd>Yes, a larger dish provides 3-6 dB more signal gain, significantly improving performance in bad weather. Upgrading from a 74cm to 1.2m dish can reduce weather-related outages by 50-70%. However, larger dishes cost more, require professional installation, and need stronger mounting. For Starlink, the dish size is fixed, but the rectangular dish performs better than the round version.</dd>
+                    
+                    <dt>How often should I realign my satellite dish?</dt>
+                    <dd>Check alignment every 6 months or after severe weather. GEO satellites require precise alignment—even 1-2 degrees off significantly degrades signal. Starlink self-aligns but should be checked for obstructions quarterly. Signs you need realignment: degraded speeds, weather sensitivity increases, or signal strength below -70 dBm.</dd>
+                    
+                    <dt>Can I boost satellite internet signal with an amplifier?</dt>
+                    <dd>Inline amplifiers can help with long cable runs (over 100 feet) but won't improve a weak satellite signal. They compensate for cable loss, not poor dish alignment or obstructions. Incorrectly used amplifiers can actually worsen performance by amplifying noise. Focus on dish positioning and cable quality first.</dd>
+                    
+                    <dt>Why does my signal strength vary throughout the day?</dt>
+                    <dd>Daily variations occur from: atmospheric changes (temperature/humidity), sun interference during equinoxes, network congestion during peak hours (5-9 PM), and for Starlink, different satellites passing overhead. Temperature changes can also cause dish movement if mounting expands/contracts. Document patterns to identify if it's environmental or network-related.</dd>
+                    
+                    <dt>What signal strength reading indicates a problem?</dt>
+                    <dd>For GEO satellites, signal strength below -75 dBm indicates problems; below -80 dBm causes frequent outages. SNR below 8 dB means too much noise. For Starlink, the app shows "Good," "Marginal," or "Poor"—anything below "Good" needs attention. During emergencies, even marginal signals (around -80 dBm) can maintain basic connectivity.</dd>
+                </dl>
             </section>
 
-            <div class="related-links">
-                <h3>Related Signal Optimization Resources</h3>
+            <div class="related-section">
+                <h3>Related Satellite Internet FAQs</h3>
                 <ul>
-                    <li><a href="can-trees-or-buildings-block-satellite-internet.html">→ Dealing with Obstructions</a></li>
-                    <li><a href="why-is-my-satellite-internet-so-slow.html">→ Troubleshooting Slow Speeds</a></li>
-                    <li><a href="does-rain-or-snow-affect-satellite-internet.html">→ Weather Impact on Signals</a></li>
-                    <li><a href="what-equipment-do-you-need-for-starlink.html">→ Equipment Requirements</a></li>
-                    <li><a href="../troubleshooting/satellite-internet-not-working.html">→ Troubleshooting Guide</a></li>
+                    <li><a href="can-trees-or-buildings-block-satellite-internet.html">Dealing with Obstructions</a></li>
+                    <li><a href="does-rain-or-snow-affect-satellite-internet.html">Weather Impact on Signals</a></li>
+                    <li><a href="does-satellite-internet-stop-working-in-storms.html">Storm Performance</a></li>
+                    <li><a href="is-satellite-internet-fast-enough-for-streaming-netflix.html">Is Satellite Internet Fast Enough for Netflix?</a></li>
+                    <li><a href="does-satellite-internet-lag-more-than-cable-fiber.html">Does Satellite Internet Have More Lag?</a></li>
                 </ul>
             </div>
 
             <div style="margin-top: 60px; padding: 30px; background: #f0f0f0; border-radius: 12px;">
                 <p style="font-size: 14px; color: #666; text-align: center; margin: 0;">
-                    This content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0066cc;">CC BY 4.0</a>. 
-                    You may freely share and adapt this material with attribution.
+                    📄 Content License: <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0066cc;">CC BY 4.0</a> | You may freely share and adapt this material with attribution<br>
+                    Part of the <a href="/etips" style="color: #0066cc;">Emergency Telecommunications & Internet Preparedness (ETips)</a> guide
                 </p>
             </div>
         </article>

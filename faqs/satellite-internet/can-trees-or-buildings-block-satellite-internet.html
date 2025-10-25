@@ -6,7 +6,7 @@
     <meta name="description" content="Learn how trees and buildings block satellite internet signals. Understand obstruction impacts, clearance requirements, and solutions for emergency connectivity.">
     <meta name="keywords" content="satellite internet obstructions, trees blocking satellite, building interference, signal blockage, line of sight">
     <title>Can Trees or Buildings Block Satellite Internet Signals? | Obstruction Guide</title>
-    <link rel="canonical" href="https://www.yoursite.com/faqs/satellite-internet/can-trees-or-buildings-block-satellite-internet">
+    <link rel="canonical" href="https://etips.org/faqs/satellite-internet/can-trees-or-buildings-block-satellite-internet">
     
     <style>
         * {
@@ -28,29 +28,78 @@
             padding: 0 20px;
         }
         
-        header {
+        .citation-banner {
             background: #f5f5f7;
             border-bottom: 1px solid #d2d2d7;
-            padding: 20px 0;
-            margin-bottom: 40px;
+            padding: 12px 0;
+            font-size: 13px;
+            color: #6e6e73;
+            text-align: center;
+        }
+        
+        .citation-banner a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .citation-banner a:hover {
+            text-decoration: underline;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid #d2d2d7;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            padding: 16px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
         }
         
         nav ul {
             list-style: none;
             display: flex;
             gap: 30px;
-            flex-wrap: wrap;
         }
         
         nav a {
-            color: #1d1d1f;
+            color: #000000;
             text-decoration: none;
             font-size: 14px;
             transition: color 0.3s;
         }
         
         nav a:hover {
-            color: #ff3b30;
+            color: #0066cc;
+        }
+        
+        .breadcrumb {
+            padding: 20px 0;
+            font-size: 14px;
+            color: #6e6e73;
+        }
+        
+        .breadcrumb a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
         
         main {
@@ -120,7 +169,7 @@
         }
         
         .comparison-table th {
-            background: #ff3b30;
+            background: #0066cc;
             color: white;
             padding: 15px;
             text-align: left;
@@ -144,14 +193,14 @@
         
         .emergency-tip {
             background: #fff3cd;
-            border-left: 4px solid #ff3b30;
+            border-left: 4px solid #ff9500;
             padding: 20px;
             margin: 30px 0;
             border-radius: 8px;
         }
         
         .emergency-tip h3 {
-            color: #ff3b30;
+            color: #ff9500;
             margin-top: 0;
             display: flex;
             align-items: center;
@@ -170,93 +219,111 @@
             margin: 30px 0;
         }
         
-        .pros, .cons {
+        .pros-card, .cons-card {
             padding: 25px;
             border-radius: 12px;
         }
         
-        .pros {
-            background: #d1f4d1;
-            border: 1px solid #4caf50;
+        .pros-card {
+            background: #f0f9f4;
+            border: 1px solid #34c759;
         }
         
-        .cons {
-            background: #ffd1d1;
+        .cons-card {
+            background: #fef2f2;
             border: 1px solid #ff3b30;
         }
         
-        .pros h3 {
-            color: #2e7d32;
+        .pros-card h3 {
+            color: #34c759;
             margin-bottom: 15px;
         }
         
-        .cons h3 {
-            color: #c62828;
+        .cons-card h3 {
+            color: #ff3b30;
             margin-bottom: 15px;
         }
         
-        .faq-section {
+        .mini-faq {
             margin-top: 60px;
             padding-top: 30px;
             border-top: 1px solid #d2d2d7;
         }
         
-        .faq-item {
+        .mini-faq h2 {
+            margin-top: 0;
             margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #e5e5e7;
         }
         
-        .faq-item:last-child {
-            border-bottom: none;
+        .mini-faq dl {
+            margin-bottom: 0;
         }
         
-        .faq-question {
+        .mini-faq dt {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 15px;
             color: #1d1d1f;
         }
         
-        .faq-answer {
+        .mini-faq dd {
             font-size: 17px;
             line-height: 1.65;
             color: #1d1d1f;
+            margin-bottom: 30px;
+            margin-left: 0;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e7;
         }
         
-        .related-links {
+        .mini-faq dd:last-child {
+            border-bottom: none;
+        }
+        
+        .related-section {
             margin-top: 60px;
             padding: 30px;
             background: #f5f5f7;
             border-radius: 12px;
         }
         
-        .related-links h3 {
+        .related-section h3 {
+            margin-top: 0;
             margin-bottom: 20px;
             color: #1d1d1f;
         }
         
-        .related-links ul {
+        .related-section ul {
             list-style: none;
             margin-left: 0;
         }
         
-        .related-links a {
+        .related-section li {
+            margin-bottom: 0;
+        }
+        
+        .related-section a {
             color: #0066cc;
             text-decoration: none;
             font-size: 17px;
             display: flex;
             align-items: center;
-            padding: 10px 0;
+            padding: 12px 0;
             border-bottom: 1px solid #d2d2d7;
             transition: color 0.3s;
         }
         
-        .related-links a:hover {
-            color: #ff3b30;
+        .related-section a::before {
+            content: "→";
+            margin-right: 10px;
+            font-weight: 600;
         }
         
-        .related-links li:last-child a {
+        .related-section a:hover {
+            color: #0051a3;
+        }
+        
+        .related-section li:last-child a {
             border-bottom: none;
         }
         
@@ -271,6 +338,15 @@
             text-align: center;
             color: #6e6e73;
             font-size: 14px;
+        }
+        
+        .footer-content a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .footer-content a:hover {
+            text-decoration: underline;
         }
         
         @media (max-width: 768px) {
@@ -303,6 +379,11 @@
             .comparison-table td {
                 padding: 10px;
             }
+            
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
         }
     </style>
     
@@ -322,18 +403,35 @@
     </script>
 </head>
 <body>
+    <div class="citation-banner">
+        <div class="container">
+            <p>📚 This guide is part of the <a href="/etips">Emergency Telecommunications & Internet Preparedness (ETips)</a> resource. Freely available under CC BY 4.0.</p>
+        </div>
+    </div>
+
     <header>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/emergency-prep">Emergency Prep</a></li>
-                    <li><a href="/faqs">FAQs</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="header-content">
+                <a href="/etips" class="logo">ETips</a>
+                <nav>
+                    <ul>
+                        <li><a href="/etips">Guide</a></li>
+                        <li><a href="/etips/mobile-cellular">Mobile</a></li>
+                        <li><a href="/etips/internet-access">Internet</a></li>
+                        <li><a href="/etips/power-solutions">Power</a></li>
+                        <li><a href="/etips/radios">Radios</a></li>
+                        <li><a href="/etips/faqs">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/etips">Home</a> › <a href="/etips/faqs">FAQs</a> › <a href="/etips/faqs/satellite-internet">Satellite Internet</a> › Obstructions
+        </div>
+    </div>
 
     <main>
         <article class="container">
@@ -654,7 +752,7 @@
             </ol>
 
             <div class="pros-cons-grid">
-                <div class="pros">
+                <div class="pros-card">
                     <h3>✓ Obstruction Workarounds</h3>
                     <ul>
                         <li>Tall mounts overcome most issues</li>
@@ -665,7 +763,7 @@
                         <li>Apps help find clear spots</li>
                     </ul>
                 </div>
-                <div class="cons">
+                <div class="cons-card">
                     <h3>✗ Obstruction Challenges</h3>
                     <ul>
                         <li>Cannot penetrate any solid objects</li>
@@ -699,60 +797,42 @@
                 <li><strong>Emergency trimming:</strong> Clear critical obstructions</li>
             </ul>
 
-            <section class="faq-section">
+            <section class="mini-faq">
                 <h2>Frequently Asked Questions</h2>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">How much clear sky does Starlink actually need?</h3>
-                    <div class="faq-answer">
-                        <p>Starlink needs a 100-degree cone of clear sky above the dish, which means no obstructions from 25 degrees above the horizon in all directions. The Starlink app shows this as a circle—any obstructions appearing in this circle will cause service interruptions every few minutes as satellites pass behind them.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Can satellite internet work through windows?</h3>
-                    <div class="faq-answer">
-                        <p>No, satellite internet cannot reliably work through windows. Modern windows with low-E coatings block satellite signals completely. Even regular glass causes 3-8 dB signal loss. While you might get intermittent connectivity through single-pane windows, it won't be stable enough for regular use.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">How far can I run cable to avoid obstructions?</h3>
-                    <div class="faq-answer">
-                        <p>Starlink's standard cable is 75-100 feet, with 150-foot options available. HughesNet and Viasat can use RG6 coaxial cable up to 150-200 feet with proper signal amplifiers. Beyond these distances, signal degradation becomes problematic. For longer runs, consider fiber optic converters or relocating the modem.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Do small branches really matter?</h3>
-                    <div class="faq-answer">
-                        <p>Yes, even small branches cause problems. A single branch crossing the signal path might cause brief 1-2 second dropouts every time a satellite passes behind it. With Starlink switching satellites every 4-15 minutes, this creates frequent interruptions. Multiple small branches compound the problem significantly.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">What's the minimum mounting height to clear obstructions?</h3>
-                    <div class="faq-answer">
-                        <p>Height depends on your specific obstructions. For every 10 feet of horizontal distance to an obstruction, you need about 3-5 feet of height to clear it (assuming 15-25 degree angle). A 30-foot tall tree that's 60 feet away requires mounting at least 10-15 feet high. Use the Starlink app or trigonometry to calculate exact requirements.</p>
-                    </div>
-                </div>
+                <dl>
+                    <dt>How much clear sky does Starlink actually need?</dt>
+                    <dd>Starlink needs a 100-degree cone of clear sky above the dish, which means no obstructions from 25 degrees above the horizon in all directions. The Starlink app shows this as a circle—any obstructions appearing in this circle will cause service interruptions every few minutes as satellites pass behind them.</dd>
+                    
+                    <dt>Can satellite internet work through windows?</dt>
+                    <dd>No, satellite internet cannot reliably work through windows. Modern windows with low-E coatings block satellite signals completely. Even regular glass causes 3-8 dB signal loss. While you might get intermittent connectivity through single-pane windows, it won't be stable enough for regular use.</dd>
+                    
+                    <dt>How far can I run cable to avoid obstructions?</dt>
+                    <dd>Starlink's standard cable is 75-100 feet, with 150-foot options available. HughesNet and Viasat can use RG6 coaxial cable up to 150-200 feet with proper signal amplifiers. Beyond these distances, signal degradation becomes problematic. For longer runs, consider fiber optic converters or relocating the modem.</dd>
+                    
+                    <dt>Do small branches really matter?</dt>
+                    <dd>Yes, even small branches cause problems. A single branch crossing the signal path might cause brief 1-2 second dropouts every time a satellite passes behind it. With Starlink switching satellites every 4-15 minutes, this creates frequent interruptions. Multiple small branches compound the problem significantly.</dd>
+                    
+                    <dt>What's the minimum mounting height to clear obstructions?</dt>
+                    <dd>Height depends on your specific obstructions. For every 10 feet of horizontal distance to an obstruction, you need about 3-5 feet of height to clear it (assuming 15-25 degree angle). A 30-foot tall tree that's 60 feet away requires mounting at least 10-15 feet high. Use the Starlink app or trigonometry to calculate exact requirements.</dd>
+                </dl>
             </section>
 
-            <div class="related-links">
-                <h3>Related Signal & Setup Resources</h3>
+            <div class="related-section">
+                <h3>Related Satellite Internet FAQs</h3>
                 <ul>
-                    <li><a href="how-can-i-improve-satellite-internet-signal-quality.html">→ How to Improve Signal Quality</a></li>
-                    <li><a href="does-rain-or-snow-affect-satellite-internet.html">→ Does Weather Affect Satellite Internet?</a></li>
-                    <li><a href="what-equipment-do-you-need-for-starlink.html">→ Starlink Equipment Requirements</a></li>
-                    <li><a href="../installation/satellite-dish-mounting-options.html">→ Dish Mounting Options</a></li>
-                    <li><a href="../troubleshooting/fixing-obstruction-errors.html">→ Fixing Obstruction Errors</a></li>
+                    <li><a href="how-can-i-improve-satellite-internet-signal-quality.html">How to Improve Signal Quality</a></li>
+                    <li><a href="does-rain-or-snow-affect-satellite-internet.html">Does Weather Affect Satellite Internet?</a></li>
+                    <li><a href="does-satellite-internet-stop-working-in-storms.html">Does Satellite Internet Work in Storms?</a></li>
+                    <li><a href="is-satellite-internet-fast-enough-for-streaming-netflix.html">Is Satellite Internet Fast Enough for Netflix?</a></li>
+                    <li><a href="does-satellite-internet-lag-more-than-cable-fiber.html">Does Satellite Internet Have More Lag?</a></li>
                 </ul>
             </div>
 
             <div style="margin-top: 60px; padding: 30px; background: #f0f0f0; border-radius: 12px;">
                 <p style="font-size: 14px; color: #666; text-align: center; margin: 0;">
-                    This content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0066cc;">CC BY 4.0</a>. 
-                    You may freely share and adapt this material with attribution.
+                    📄 Content License: <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0066cc;">CC BY 4.0</a> | You may freely share and adapt this material with attribution<br>
+                    Part of the <a href="/etips" style="color: #0066cc;">Emergency Telecommunications & Internet Preparedness (ETips)</a> guide
                 </p>
             </div>
         </article>
