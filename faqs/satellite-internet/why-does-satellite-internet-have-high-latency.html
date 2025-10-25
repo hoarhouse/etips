@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Does Satellite Internet Have High Latency? 2025 Technical Guide | ETips</title>
+    <meta name="description" content="Complete technical explanation of satellite internet latency including physics, distance, technology differences between LEO and GEO satellites for emergency communications.">
+    <meta name="keywords" content="satellite internet latency, satellite ping, why satellite slow, GEO vs LEO latency, Starlink latency, satellite delay, emergency communications">
+    <meta name="author" content="ETips Emergency Preparedness">
+    <meta property="og:title" content="Why Does Satellite Internet Have High Latency? Physics and Technology Explained">
+    <meta property="og:description" content="Essential guide understanding satellite internet latency, the physics behind delays, and why LEO satellites like Starlink solve the problem for emergency communications">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://hoarhouse.github.io/etips/faqs/satellite-internet/why-does-satellite-internet-have-high-latency.html">
+    <link rel="canonical" href="https://hoarhouse.github.io/etips/faqs/satellite-internet/why-does-satellite-internet-have-high-latency.html">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": {
+            "@type": "Question",
+            "name": "Why does satellite internet have high latency?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Traditional satellite internet has high latency (600-800ms) because satellites orbit 22,236 miles above Earth. Signals must travel 44,472 miles round-trip at the speed of light, creating unavoidable 600ms+ delays. Modern LEO satellites like Starlink orbit at only 340 miles, reducing latency to 20-40ms comparable to cable internet. This physics-based limitation makes GEO satellites poor for real-time communications while LEO satellites excel."
+            }
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "ETips Emergency Preparedness"
+        },
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-01-01"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background-color: #ffffff;
+        }
+        
+        .citation-notice {
+            font-size: 0.75rem;
+            color: #666666;
+            padding: 0.5rem;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e7;
+            background-color: #ffffff;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #e5e5e7;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+        
+        .nav-links a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+        
+        .nav-links a:hover, .nav-links a.active {
+            color: #ff3b30;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 2rem;
+            color: #666666;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #666666;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            color: #ff3b30;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+        
+        .short-answer {
+            background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+            border-left: 4px solid #ff3b30;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .short-answer h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+        
+        .short-answer p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #333333;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #000000;
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e5e7;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #000000;
+            margin: 2rem 0 1rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        ul, ol {
+            margin: 0 0 1.5rem 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        strong {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .emergency-tip {
+            background: #fff3f3;
+            border-left: 4px solid #ff3b30;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .emergency-tip strong {
+            color: #ff3b30;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .pros-cons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .pros-card, .cons-card {
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #e5e5e7;
+        }
+        
+        .pros-card {
+            background: #f0fff4;
+            border-left: 4px solid #34c759;
+        }
+        
+        .cons-card {
+            background: #fff5f5;
+            border-left: 4px solid #ff3b30;
+        }
+        
+        .pros-card h3 {
+            color: #34c759;
+        }
+        
+        .cons-card h3 {
+            color: #ff3b30;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .comparison-table th {
+            background: #f5f5f7;
+            padding: 1.25rem;
+            text-align: left;
+            font-weight: 600;
+            color: #000000;
+            border-bottom: 2px solid #e5e5e7;
+        }
+        
+        .comparison-table td {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff9f0 0%, #fff5eb 100%);
+            border: 1px solid #ffcc88;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .highlight-box h3 {
+            color: #ff6b00;
+            margin-bottom: 1rem;
+        }
+        
+        .mini-faq {
+            background: #f5f5f7;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+        
+        .mini-faq h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #000000;
+        }
+        
+        .mini-faq dl dt {
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #000000;
+        }
+        
+        .mini-faq dl dd {
+            margin-left: 0;
+            color: #333333;
+            line-height: 1.6;
+        }
+        
+        .related-faqs {
+            background: #f5f5f7;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+        
+        .related-faqs h2 {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .related-faqs ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .related-faqs li {
+            margin-bottom: 1rem;
+        }
+        
+        .related-faqs a {
+            color: #000000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .related-faqs a:hover {
+            background: #ffffff;
+            color: #ff3b30;
+            transform: translateX(4px);
+        }
+        
+        .related-faqs a::before {
+            content: '→';
+            margin-right: 0.75rem;
+            color: #ff3b30;
+            font-weight: bold;
+        }
+        
+        footer {
+            margin-top: 4rem;
+            padding: 3rem 2rem;
+            border-top: 1px solid #e5e5e7;
+            text-align: center;
+            background: #f5f5f7;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-content p {
+            color: #666666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .footer-content a {
+            color: #ff3b30;
+            text-decoration: none;
+        }
+        
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            main {
+                padding: 2rem 1rem;
+            }
+            
+            .pros-cons-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .comparison-table th, .comparison-table td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="citation-notice">
+        Content from this page may be cited with attribution. Link back to: <strong>https://hoarhouse.github.io/etips/faqs/satellite-internet/why-does-satellite-internet-have-high-latency.html</strong>
+    </div>
+
+    <header>
+        <nav>
+            <a href="../../" class="logo">ETips</a>
+            <ul class="nav-links">
+                <li><a href="../../#home">Home</a></li>
+                <li><a href="../../#equipment">Equipment</a></li>
+                <li><a href="../../#guides">Guides</a></li>
+                <li><a href="../" class="active">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../../">Home</a> / <a href="../">FAQs</a> / <a href="./">Satellite Internet</a> / Why High Latency?
+        </div>
+
+        <article itemscope itemtype="https://schema.org/Article">
+            <h1 itemprop="headline">Why Does Satellite Internet Have High Latency?</h1>
+            
+            <div class="short-answer">
+                <h2>Short Answer:</h2>
+                <p itemprop="description">Satellite internet latency is determined by physics: the distance signals must travel to satellites and back. Traditional satellites (HughesNet/Viasat) orbit at 22,236 miles altitude, requiring signals to travel 44,472 miles round-trip. Even at light speed (186,282 miles/second), this creates unavoidable 600-800ms delays. Modern LEO satellites like Starlink orbit at just 340 miles, reducing the round-trip to 680 miles and latency to 20-40ms. This fundamental physics difference makes LEO satellites superior for emergency communications requiring real-time interaction.</p>
+            </div>
+
+            <h2>The Physics of Satellite Communication</h2>
+            <p>Understanding the speed of light limitation reveals why traditional satellite internet inherently has high latency that no technology can overcome.</p>
+
+            <h3>The Speed of Light Calculation</h3>
+            <ul>
+                <li><strong>Speed of Light:</strong> 186,282 miles per second (299,792 km/s)</li>
+                <li><strong>GEO Satellite Distance:</strong> 22,236 miles from Earth's surface</li>
+                <li><strong>Round Trip:</strong> 44,472 miles (up and back down)</li>
+                <li><strong>Minimum Delay:</strong> 44,472 ÷ 186,282 = 0.239 seconds (239ms)</li>
+                <li><strong>Real-World Total:</strong> 600-800ms including processing and routing</li>
+            </ul>
+
+            <div class="emergency-tip">
+                <strong>⚠️ Emergency Communications Impact:</strong>
+                During disasters, 600ms+ latency makes video calls frustrating, emergency coordination difficult, and remote medical consultations problematic. Conversations have awkward 1.2-second gaps between speaking and response. This physics-based limitation cannot be fixed with better technology - only closer satellites solve it, making LEO constellations like Starlink essential for emergency preparedness.
+            </div>
+
+            <h2>Orbit Altitude Comparison</h2>
+            <p>Different satellite orbits create dramatically different latency characteristics based purely on distance.</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Orbit Type</th>
+                        <th>Altitude</th>
+                        <th>Round Trip Distance</th>
+                        <th>Theoretical Minimum</th>
+                        <th>Real-World Latency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>LEO (Starlink)</strong></td>
+                        <td>340-350 miles</td>
+                        <td>680-700 miles</td>
+                        <td>4ms</td>
+                        <td>20-40ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MEO (O3b)</strong></td>
+                        <td>5,000 miles</td>
+                        <td>10,000 miles</td>
+                        <td>54ms</td>
+                        <td>125-150ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GEO (HughesNet)</strong></td>
+                        <td>22,236 miles</td>
+                        <td>44,472 miles</td>
+                        <td>239ms</td>
+                        <td>600-800ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GEO (Viasat)</strong></td>
+                        <td>22,236 miles</td>
+                        <td>44,472 miles</td>
+                        <td>239ms</td>
+                        <td>600-700ms</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Why GEO Satellites Exist Despite High Latency</h2>
+            <p>Understanding why companies use distant GEO satellites reveals the trade-offs in satellite internet design.</p>
+
+            <h3>Advantages of GEO Satellites</h3>
+            <ul>
+                <li><strong>Stationary Position:</strong> Stay fixed above one spot on Earth</li>
+                <li><strong>Coverage Area:</strong> One satellite covers entire continent</li>
+                <li><strong>Simple Tracking:</strong> Dish points to fixed location</li>
+                <li><strong>Fewer Satellites:</strong> 3 satellites cover entire Earth</li>
+                <li><strong>Lower Initial Cost:</strong> Fewer satellites to build and launch</li>
+                <li><strong>Mature Technology:</strong> Decades of operational experience</li>
+            </ul>
+
+            <h3>Disadvantages of GEO Satellites</h3>
+            <ul>
+                <li><strong>Extreme Latency:</strong> 600-800ms makes real-time communication difficult</li>
+                <li><strong>Power Requirements:</strong> Need strong signals for 44,000-mile journey</li>
+                <li><strong>Large Dishes:</strong> Require bigger antennas for weak signals</li>
+                <li><strong>Weather Sensitivity:</strong> Long path through atmosphere increases rain fade</li>
+                <li><strong>Polar Blind Spots:</strong> Cannot serve extreme northern/southern regions</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>💡 The Distance Reality</h3>
+                <p>GEO satellites are 65 times farther away than LEO satellites. If LEO satellites were at eye level (6 feet), GEO satellites would be 390 feet high - taller than a 30-story building. This massive distance difference creates the latency problem that physics cannot solve.</p>
+            </div>
+
+            <h2>Components of Total Latency</h2>
+            <p>The complete latency experienced by users includes multiple components beyond just signal travel time.</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Latency Component</th>
+                        <th>LEO (Starlink)</th>
+                        <th>GEO (Traditional)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Signal Travel Time</strong></td>
+                        <td>4-5ms</td>
+                        <td>239-250ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Satellite Processing</strong></td>
+                        <td>2-3ms</td>
+                        <td>50-100ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ground Station Hop</strong></td>
+                        <td>5-10ms</td>
+                        <td>100-150ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Network Routing</strong></td>
+                        <td>5-15ms</td>
+                        <td>50-100ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Protocol Overhead</strong></td>
+                        <td>4-7ms</td>
+                        <td>60-100ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TOTAL</strong></td>
+                        <td><strong>20-40ms</strong></td>
+                        <td><strong>600-800ms</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Real-World Impact of Latency</h2>
+            <p>Different latency levels create vastly different user experiences for emergency communications and daily use.</p>
+
+            <div class="pros-cons-grid">
+                <div class="pros-card">
+                    <h3>✓ Low Latency (20-40ms)</h3>
+                    <ul>
+                        <li>Natural video conversations</li>
+                        <li>Responsive web browsing</li>
+                        <li>Online gaming possible</li>
+                        <li>VoIP calls work perfectly</li>
+                        <li>Remote desktop usable</li>
+                        <li>Video conferencing smooth</li>
+                        <li>Financial trading viable</li>
+                    </ul>
+                </div>
+                <div class="cons-card">
+                    <h3>✗ High Latency (600-800ms)</h3>
+                    <ul>
+                        <li>Awkward conversation gaps</li>
+                        <li>Slow page loading feel</li>
+                        <li>Gaming impossible</li>
+                        <li>VoIP calls have delays</li>
+                        <li>Remote desktop frustrating</li>
+                        <li>Video calls interrupted</li>
+                        <li>Trading too risky</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="emergency-tip">
+                <strong>⚠️ Medical Consultation Impact:</strong>
+                During disasters, telemedicine becomes critical when physical medical access is limited. With 600ms latency, doctor-patient conversations are difficult, making accurate diagnosis challenging. Showing injuries or symptoms via video becomes frustrating with delays. Starlink's low latency enables natural medical consultations when they matter most.
+            </div>
+
+            <h2>Why LEO Satellites Solve the Problem</h2>
+            <p>Low Earth Orbit satellites fundamentally change the latency equation through proximity.</p>
+
+            <h3>LEO Satellite Advantages</h3>
+            <ul>
+                <li><strong>Proximity:</strong> 340 miles vs 22,236 miles from Earth</li>
+                <li><strong>Physics Win:</strong> 65x closer means 65x less distance for signals</li>
+                <li><strong>Cable-Like Performance:</strong> 20-40ms rivals terrestrial internet</li>
+                <li><strong>Full Functionality:</strong> All internet services work normally</li>
+                <li><strong>Future Proof:</strong> Inter-satellite laser links reduce latency further</li>
+            </ul>
+
+            <h3>LEO Satellite Challenges</h3>
+            <ul>
+                <li><strong>Many Satellites Needed:</strong> Thousands required for coverage</li>
+                <li><strong>Constant Motion:</strong> Orbit Earth every 90-120 minutes</li>
+                <li><strong>Complex Handoffs:</strong> Switch between satellites frequently</li>
+                <li><strong>Higher Cost:</strong> More satellites to build and launch</li>
+                <li><strong>Shorter Lifespan:</strong> 5-7 years vs 15 years for GEO</li>
+            </ul>
+
+            <h2>Measuring and Testing Latency</h2>
+            <p>Understanding how to measure latency helps verify provider claims and troubleshoot issues.</p>
+
+            <h3>How to Test Your Latency</h3>
+            <ol>
+                <li><strong>Ping Test:</strong> Command line "ping 8.8.8.8" shows round-trip time</li>
+                <li><strong>Speed Test Sites:</strong> Fast.com and Speedtest.net display latency</li>
+                <li><strong>Game Clients:</strong> Most games show ping/latency in settings</li>
+                <li><strong>Network Tools:</strong> Traceroute shows latency at each hop</li>
+                <li><strong>Continuous Monitoring:</strong> Tools like PingPlotter track over time</li>
+            </ol>
+
+            <h3>Expected Test Results</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Connection Type</th>
+                        <th>Typical Ping Result</th>
+                        <th>Consistency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fiber Optic</td>
+                        <td>2-10ms</td>
+                        <td>Very stable</td>
+                    </tr>
+                    <tr>
+                        <td>Cable Internet</td>
+                        <td>10-30ms</td>
+                        <td>Generally stable</td>
+                    </tr>
+                    <tr>
+                        <td>Starlink</td>
+                        <td>20-40ms</td>
+                        <td>Occasional spikes</td>
+                    </tr>
+                    <tr>
+                        <td>4G LTE</td>
+                        <td>30-70ms</td>
+                        <td>Variable</td>
+                    </tr>
+                    <tr>
+                        <td>HughesNet/Viasat</td>
+                        <td>600-800ms</td>
+                        <td>Consistently high</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Future Latency Improvements</h2>
+            <p>Understanding technological developments helps predict future emergency communication capabilities.</p>
+
+            <h3>Starlink Gen 2 with Laser Links</h3>
+            <ul>
+                <li><strong>Inter-Satellite Communication:</strong> Data hops between satellites in space</li>
+                <li><strong>Fewer Ground Stations:</strong> Reduces ground routing delays</li>
+                <li><strong>Speed of Light in Vacuum:</strong> Faster than fiber optic cables</li>
+                <li><strong>Potential:</strong> Could achieve lower latency than terrestrial internet</li>
+                <li><strong>Timeline:</strong> Rolling out through 2025-2027</li>
+            </ul>
+
+            <h3>Other Emerging Technologies</h3>
+            <ul>
+                <li><strong>Amazon Kuiper:</strong> Planning 590-mile altitude for 30-50ms latency</li>
+                <li><strong>OneWeb:</strong> 750-mile altitude achieving 70-100ms latency</li>
+                <li><strong>Telesat Lightspeed:</strong> 620-mile altitude targeting 30-50ms</li>
+                <li><strong>Chinese Constellations:</strong> Multiple LEO projects in development</li>
+            </ul>
+
+            <div class="mini-faq">
+                <h3>Latency Questions</h3>
+                <dl>
+                    <dt>Can software updates fix high satellite latency?</dt>
+                    <dd>No. The 600ms+ latency of GEO satellites is caused by physics (distance and speed of light), not software. No amount of optimization can make signals travel faster than light. Only physically closer satellites reduce latency.</dd>
+                    
+                    <dt>Why does my Starlink sometimes spike to 100ms+?</dt>
+                    <dd>Occasional spikes occur during satellite handoffs, network congestion, or weather interference. These are temporary and typically last seconds. Average latency remains 20-40ms, unlike GEO satellites' constant 600ms+.</dd>
+                    
+                    <dt>Is satellite latency worse than dial-up internet?</dt>
+                    <dd>GEO satellite latency (600ms+) is actually worse than dial-up (100-200ms). However, satellite provides much higher bandwidth. Starlink combines low latency with high bandwidth, surpassing both.</dd>
+                    
+                    <dt>Does weather affect latency or just speed?</dt>
+                    <dd>Weather primarily affects signal strength and speed, not latency. The distance remains constant. However, error correction during bad weather can add 10-20ms processing delay.</dd>
+                    
+                    <dt>Will GEO satellites ever achieve low latency?</dt>
+                    <dd>Physically impossible. Even with theoretical breakthroughs, signals cannot exceed light speed. GEO satellites will always have 239ms+ minimum latency due to their 22,236-mile altitude requirement for stationary positioning.</dd>
+                </dl>
+            </div>
+
+            <section class="related-faqs">
+                <h2>Related Satellite Internet FAQs</h2>
+                <ul>
+                    <li><a href="can-you-play-online-games-on-satellite-internet.html">Can you play online games on satellite internet?</a></li>
+                    <li><a href="is-satellite-internet-getting-faster-with-new-satellites.html">Is satellite internet getting faster with new satellites?</a></li>
+                    <li><a href="how-fast-is-starlink-internet.html">How fast is Starlink internet?</a></li>
+                    <li><a href="what-is-starlink.html">What is Starlink and how does it work?</a></li>
+                    <li><a href="./">Return to Satellite Internet FAQ Index</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Citation:</strong> ETips Emergency Preparedness. (2025). Why does satellite internet have high latency? Physics and technology explained. Retrieved from https://hoarhouse.github.io/etips/faqs/satellite-internet/why-does-satellite-internet-have-high-latency.html</p>
+            <p>Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | Cite with attribution</p>
+        </div>
+    </footer>
+</body>
+</html>
