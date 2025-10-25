@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Is My Satellite Internet So Slow? 2025 Troubleshooting Guide | ETips</title>
+    <meta name="description" content="Complete troubleshooting guide for slow satellite internet including causes, fixes, optimization tips, and provider-specific solutions for emergency communications.">
+    <meta name="keywords" content="satellite internet slow, satellite internet troubleshooting, fix slow satellite, Starlink slow speeds, satellite optimization, emergency internet fix">
+    <meta name="author" content="ETips Emergency Preparedness">
+    <meta property="og:title" content="Why Is My Satellite Internet So Slow? Troubleshooting and Fixes">
+    <meta property="og:description" content="Essential guide to diagnosing and fixing slow satellite internet speeds, with provider-specific solutions for maintaining emergency communications">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://hoarhouse.github.io/etips/faqs/satellite-internet/why-is-my-satellite-internet-so-slow.html">
+    <link rel="canonical" href="https://hoarhouse.github.io/etips/faqs/satellite-internet/why-is-my-satellite-internet-so-slow.html">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": {
+            "@type": "Question",
+            "name": "Why is my satellite internet so slow?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Satellite internet slowdowns have multiple causes: weather interference (rain fade), obstructions blocking signal, network congestion during peak hours, exceeding data caps (HughesNet/Viasat), equipment issues, or poor dish alignment. For Starlink, check for obstructions using the app. For traditional satellite, verify you haven't hit data caps causing throttling to 1-3 Mbps. Emergency situations require immediate troubleshooting to restore critical communications."
+            }
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "ETips Emergency Preparedness"
+        },
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-01-01"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background-color: #ffffff;
+        }
+        
+        .citation-notice {
+            font-size: 0.75rem;
+            color: #666666;
+            padding: 0.5rem;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e7;
+            background-color: #ffffff;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #e5e5e7;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+        
+        .nav-links a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+        
+        .nav-links a:hover, .nav-links a.active {
+            color: #ff3b30;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 2rem;
+            color: #666666;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #666666;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            color: #ff3b30;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+        
+        .short-answer {
+            background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+            border-left: 4px solid #ff3b30;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .short-answer h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+        
+        .short-answer p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #333333;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #000000;
+            margin: 3rem 0 1.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e5e7;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #000000;
+            margin: 2rem 0 1rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        ul, ol {
+            margin: 0 0 1.5rem 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        strong {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .emergency-tip {
+            background: #fff3f3;
+            border-left: 4px solid #ff3b30;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .emergency-tip strong {
+            color: #ff3b30;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .pros-cons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .pros-card, .cons-card {
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #e5e5e7;
+        }
+        
+        .pros-card {
+            background: #f0fff4;
+            border-left: 4px solid #34c759;
+        }
+        
+        .cons-card {
+            background: #fff5f5;
+            border-left: 4px solid #ff3b30;
+        }
+        
+        .pros-card h3 {
+            color: #34c759;
+        }
+        
+        .cons-card h3 {
+            color: #ff3b30;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .comparison-table th {
+            background: #f5f5f7;
+            padding: 1.25rem;
+            text-align: left;
+            font-weight: 600;
+            color: #000000;
+            border-bottom: 2px solid #e5e5e7;
+        }
+        
+        .comparison-table td {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff9f0 0%, #fff5eb 100%);
+            border: 1px solid #ffcc88;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .highlight-box h3 {
+            color: #ff6b00;
+            margin-bottom: 1rem;
+        }
+        
+        .mini-faq {
+            background: #f5f5f7;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+        
+        .mini-faq h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #000000;
+        }
+        
+        .mini-faq dl dt {
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #000000;
+        }
+        
+        .mini-faq dl dd {
+            margin-left: 0;
+            color: #333333;
+            line-height: 1.6;
+        }
+        
+        .related-faqs {
+            background: #f5f5f7;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+        
+        .related-faqs h2 {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .related-faqs ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .related-faqs li {
+            margin-bottom: 1rem;
+        }
+        
+        .related-faqs a {
+            color: #000000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .related-faqs a:hover {
+            background: #ffffff;
+            color: #ff3b30;
+            transform: translateX(4px);
+        }
+        
+        .related-faqs a::before {
+            content: '→';
+            margin-right: 0.75rem;
+            color: #ff3b30;
+            font-weight: bold;
+        }
+        
+        footer {
+            margin-top: 4rem;
+            padding: 3rem 2rem;
+            border-top: 1px solid #e5e5e7;
+            text-align: center;
+            background: #f5f5f7;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-content p {
+            color: #666666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .footer-content a {
+            color: #ff3b30;
+            text-decoration: none;
+        }
+        
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            main {
+                padding: 2rem 1rem;
+            }
+            
+            .pros-cons-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .comparison-table th, .comparison-table td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="citation-notice">
+        Content from this page may be cited with attribution. Link back to: <strong>https://hoarhouse.github.io/etips/faqs/satellite-internet/why-is-my-satellite-internet-so-slow.html</strong>
+    </div>
+
+    <header>
+        <nav>
+            <a href="../../" class="logo">ETips</a>
+            <ul class="nav-links">
+                <li><a href="../../#home">Home</a></li>
+                <li><a href="../../#equipment">Equipment</a></li>
+                <li><a href="../../#guides">Guides</a></li>
+                <li><a href="../" class="active">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../../">Home</a> / <a href="../">FAQs</a> / <a href="./">Satellite Internet</a> / Why Is It Slow?
+        </div>
+
+        <article itemscope itemtype="https://schema.org/Article">
+            <h1 itemprop="headline">Why Is My Satellite Internet So Slow?</h1>
+            
+            <div class="short-answer">
+                <h2>Short Answer:</h2>
+                <p itemprop="description">Satellite internet slowdowns occur from multiple causes: weather interference (rain/snow absorbing signal), obstructions blocking dish view, network congestion during peak hours (5-11 PM), data cap throttling (HughesNet/Viasat throttle to 1-3 Mbps after limits), poor dish alignment, outdated equipment firmware, or too many connected devices. For emergency communications, immediately check for obstructions (Starlink app), verify data usage hasn't triggered caps, and ensure dish has clear sky view. Quick fixes can restore critical connectivity during disasters.</p>
+            </div>
+
+            <h2>Common Causes of Slow Satellite Internet</h2>
+            <p>Understanding the root cause of slowdowns helps quickly restore speeds critical for emergency communications.</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Cause</th>
+                        <th>Symptoms</th>
+                        <th>Quick Fix</th>
+                        <th>Time to Resolve</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Weather (Rain Fade)</strong></td>
+                        <td>Speeds drop during storms</td>
+                        <td>Wait for weather to pass</td>
+                        <td>30-60 minutes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Obstructions</strong></td>
+                        <td>Intermittent disconnections</td>
+                        <td>Clear trees/relocate dish</td>
+                        <td>Immediate-Hours</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Cap Hit</strong></td>
+                        <td>Sudden drop to 1-3 Mbps</td>
+                        <td>Buy data tokens or wait</td>
+                        <td>Until next billing cycle</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Peak Congestion</strong></td>
+                        <td>Slow 5-11 PM daily</td>
+                        <td>Use outside peak hours</td>
+                        <td>After 11 PM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Poor Alignment</strong></td>
+                        <td>Consistently slow</td>
+                        <td>Realign dish</td>
+                        <td>30 minutes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Equipment Issues</strong></td>
+                        <td>Getting worse over time</td>
+                        <td>Restart/update firmware</td>
+                        <td>15 minutes</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="emergency-tip">
+                <strong>⚠️ Emergency Quick Check:</strong>
+                During disasters when speed matters most: 1) Check data usage (HughesNet/Viasat users), 2) Look for obstructions (Starlink app shows blockages), 3) Restart equipment (unplug for 30 seconds), 4) Check for weather at your location AND ground station location. These four checks resolve 80% of speed issues within minutes.
+            </div>
+
+            <h2>Provider-Specific Slowdown Causes</h2>
+            <p>Different satellite providers have unique issues causing slow speeds that require specific troubleshooting approaches.</p>
+
+            <h3>Starlink Specific Issues</h3>
+            <ul>
+                <li><strong>Obstruction Interruptions:</strong> Even small obstructions cause major slowdowns</li>
+                <li><strong>Thermal Throttling:</strong> Dish overheats in extreme heat (>122°F)</li>
+                <li><strong>Satellite Handoffs:</strong> Brief slowdowns during satellite switches</li>
+                <li><strong>Network Deprioritization:</strong> Heavy users (1TB+) may be slowed</li>
+                <li><strong>Beta Firmware:</strong> New updates sometimes reduce performance</li>
+                <li><strong>Ground Station Distance:</strong> Farther stations increase latency</li>
+            </ul>
+
+            <h3>HughesNet/Viasat Specific Issues</h3>
+            <ul>
+                <li><strong>Data Cap Throttling:</strong> Primary cause - speeds drop to 1-3 Mbps</li>
+                <li><strong>Video Data Saver:</strong> Forces all video to 480p quality</li>
+                <li><strong>Fair Access Policy:</strong> Additional throttling for "excessive" use</li>
+                <li><strong>Beam Congestion:</strong> Too many users in your coverage beam</li>
+                <li><strong>Bonus Zone Confusion:</strong> Full speeds only 2-8 AM</li>
+                <li><strong>Plan Limitations:</strong> Lower tier plans have lower priority</li>
+            </ul>
+
+            <h2>Weather-Related Slowdowns</h2>
+            <p>Weather significantly impacts satellite signals, especially during emergencies when storms are common.</p>
+
+            <div class="pros-cons-grid">
+                <div class="cons-card">
+                    <h3>Weather Impact Severity</h3>
+                    <ul>
+                        <li><strong>Light Rain:</strong> 0-10% speed loss</li>
+                        <li><strong>Heavy Rain:</strong> 20-50% speed loss</li>
+                        <li><strong>Thunderstorms:</strong> 50-100% outage</li>
+                        <li><strong>Snow on Dish:</strong> 80-100% outage</li>
+                        <li><strong>Heavy Clouds:</strong> 5-15% speed loss</li>
+                        <li><strong>High Winds:</strong> Intermittent if dish moves</li>
+                    </ul>
+                </div>
+                <div class="pros-card">
+                    <h3>Weather Solutions</h3>
+                    <ul>
+                        <li><strong>Rain:</strong> Wait it out, use rain fade resistant modulation</li>
+                        <li><strong>Snow:</strong> Brush off dish, use heater</li>
+                        <li><strong>Wind:</strong> Secure dish mounting</li>
+                        <li><strong>Heat:</strong> Shade dish, add cooling</li>
+                        <li><strong>Ice:</strong> De-icing spray safe for electronics</li>
+                        <li><strong>Clouds:</strong> No action needed usually</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>💡 Rain Fade Science</h3>
+                <p>Rain fade occurs because water absorbs radio frequencies used by satellites. The effect is worse at higher frequencies: Ku-band (12-18 GHz) used by most satellites loses more signal than Ka-band (26-40 GHz). Starlink uses both but adapts automatically. Traditional satellites can't adapt, causing severe slowdowns.</p>
+            </div>
+
+            <h2>Obstruction Problems and Solutions</h2>
+            <p>Clear line of sight to satellites is critical for maintaining speeds during emergencies.</p>
+
+            <h3>Common Obstructions</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Obstruction Type</th>
+                        <th>Impact Level</th>
+                        <th>Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trees/Branches</td>
+                        <td>Severe - 50-100% loss</td>
+                        <td>Trim or relocate dish</td>
+                    </tr>
+                    <tr>
+                        <td>Buildings</td>
+                        <td>Complete blockage</td>
+                        <td>Must relocate dish</td>
+                    </tr>
+                    <tr>
+                        <td>Power Lines</td>
+                        <td>Moderate - 20-40% loss</td>
+                        <td>Reposition if possible</td>
+                    </tr>
+                    <tr>
+                        <td>Hills/Mountains</td>
+                        <td>Partial - depends on angle</td>
+                        <td>Elevate dish position</td>
+                    </tr>
+                    <tr>
+                        <td>Your Own Roof</td>
+                        <td>Variable</td>
+                        <td>Mount at peak/edge</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Using Starlink App for Obstructions</h3>
+            <ol>
+                <li><strong>Check for Obstructions:</strong> App shows real-time blockage map</li>
+                <li><strong>View Obstruction History:</strong> See pattern of interruptions</li>
+                <li><strong>Use AR View:</strong> Camera shows where satellites travel</li>
+                <li><strong>Calculate Best Position:</strong> Test locations before mounting</li>
+                <li><strong>Monitor Performance:</strong> Track improvement after changes</li>
+            </ol>
+
+            <h2>Data Cap and Throttling Issues</h2>
+            <p>For HughesNet and Viasat users, data caps are the primary cause of slow speeds.</p>
+
+            <h3>Identifying Data Cap Throttling</h3>
+            <ul>
+                <li><strong>Speed Test:</strong> Consistently 1-3 Mbps indicates throttling</li>
+                <li><strong>Check Usage Meter:</strong> Provider app/website shows remaining data</li>
+                <li><strong>Timing:</strong> Sudden slowdown mid-month suggests cap hit</li>
+                <li><strong>All Devices Affected:</strong> Not just one computer/device</li>
+                <li><strong>Time-Based:</strong> May improve 2-8 AM during bonus zone</li>
+            </ul>
+
+            <div class="emergency-tip">
+                <strong>⚠️ Data Cap Emergency:</strong>
+                If you hit your cap during a disaster, options are limited: 1) Buy expensive data tokens ($10/GB), 2) Wait until 2 AM for bonus zone speeds, 3) Use mobile hotspot as backup, 4) Find public Wi-Fi if safe. This is why unlimited providers like Starlink are critical for emergency preparedness - caps don't exist.
+            </div>
+
+            <h2>Network Congestion Patterns</h2>
+            <p>Understanding when and why congestion occurs helps plan critical communications.</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Time Period</th>
+                        <th>Congestion Level</th>
+                        <th>Speed Impact</th>
+                        <th>Best Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2 AM - 8 AM</td>
+                        <td>Minimal</td>
+                        <td>Full speeds</td>
+                        <td>Large downloads/backups</td>
+                    </tr>
+                    <tr>
+                        <td>8 AM - 12 PM</td>
+                        <td>Low-Medium</td>
+                        <td>90% speeds</td>
+                        <td>Work/school tasks</td>
+                    </tr>
+                    <tr>
+                        <td>12 PM - 5 PM</td>
+                        <td>Medium</td>
+                        <td>75% speeds</td>
+                        <td>General use</td>
+                    </tr>
+                    <tr>
+                        <td>5 PM - 9 PM</td>
+                        <td>Very High</td>
+                        <td>40-60% speeds</td>
+                        <td>Essential only</td>
+                    </tr>
+                    <tr>
+                        <td>9 PM - 12 AM</td>
+                        <td>High</td>
+                        <td>60-80% speeds</td>
+                        <td>Light streaming</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Equipment Troubleshooting Steps</h2>
+            <p>Systematic troubleshooting quickly identifies and resolves equipment-related slowdowns.</p>
+
+            <h3>Quick Fix Sequence (15 minutes)</h3>
+            <ol>
+                <li><strong>Power Cycle:</strong> Unplug everything for 30 seconds</li>
+                <li><strong>Check Connections:</strong> Ensure all cables are secure</li>
+                <li><strong>Update Position:</strong> Dish may have shifted in wind</li>
+                <li><strong>Clear Snow/Debris:</strong> Clean dish surface gently</li>
+                <li><strong>Check App/Dashboard:</strong> Look for error messages</li>
+                <li><strong>Speed Test:</strong> Document current speeds</li>
+                <li><strong>Contact Support:</strong> If no improvement</li>
+            </ol>
+
+            <h3>Advanced Troubleshooting</h3>
+            <ul>
+                <li><strong>Firmware Updates:</strong> Check for pending updates in app</li>
+                <li><strong>Factory Reset:</strong> Last resort - reconfigure from scratch</li>
+                <li><strong>Cable Inspection:</strong> Look for damage or water ingress</li>
+                <li><strong>Router Logs:</strong> Check for error patterns</li>
+                <li><strong>DNS Changes:</strong> Try Google DNS (8.8.8.8)</li>
+                <li><strong>MTU Settings:</strong> Reduce if packet fragmentation occurring</li>
+            </ul>
+
+            <h2>Speed Optimization Techniques</h2>
+            <p>Maximize available bandwidth during emergencies with these optimization strategies.</p>
+
+            <div class="pros-cons-grid">
+                <div class="pros-card">
+                    <h3>✓ Quick Optimizations</h3>
+                    <ul>
+                        <li>Disconnect unused devices</li>
+                        <li>Disable auto-updates</li>
+                        <li>Lower video quality settings</li>
+                        <li>Use ethernet vs Wi-Fi</li>
+                        <li>Close background apps</li>
+                        <li>Enable QoS for priority devices</li>
+                        <li>Clear browser cache</li>
+                    </ul>
+                </div>
+                <div class="pros-card">
+                    <h3>✓ Advanced Optimizations</h3>
+                    <ul>
+                        <li>Optimize dish placement</li>
+                        <li>Upgrade to better plan</li>
+                        <li>Add mesh network nodes</li>
+                        <li>Configure traffic shaping</li>
+                        <li>Use VPN for compression</li>
+                        <li>Schedule heavy downloads</li>
+                        <li>Implement ad blocking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>When to Contact Support</h2>
+            <p>Knowing when professional help is needed saves time during critical situations.</p>
+
+            <h3>Contact Support When:</h3>
+            <ul>
+                <li><strong>Hardware Damage:</strong> Physical damage to dish or cables</li>
+                <li><strong>Account Issues:</strong> Billing or service suspension</li>
+                <li><strong>Persistent Problems:</strong> Issues lasting over 24 hours</li>
+                <li><strong>Error Messages:</strong> Specific error codes appearing</li>
+                <li><strong>No Signal:</strong> Complete loss of connectivity</li>
+                <li><strong>Unusual Behavior:</strong> Speeds far below plan minimums</li>
+            </ul>
+
+            <h3>Information to Provide Support</h3>
+            <ul>
+                <li>Account number and service address</li>
+                <li>Speed test results with timestamps</li>
+                <li>Error messages or codes</li>
+                <li>Troubleshooting already attempted</li>
+                <li>Weather conditions at your location</li>
+                <li>Recent changes to setup</li>
+            </ul>
+
+            <div class="mini-faq">
+                <h3>Slow Speed Questions</h3>
+                <dl>
+                    <dt>Why does my satellite internet slow down at night?</dt>
+                    <dd>Network congestion peaks 5-11 PM when everyone streams video and games online. Traditional satellite providers also implement "network management" (throttling) during these hours. Starlink handles congestion better but may still slow slightly.</dd>
+                    
+                    <dt>Can trees cause intermittent slowdowns?</dt>
+                    <dd>Yes, even partial obstructions from tree branches cause significant slowdowns. As satellites move across the sky (Starlink) or Earth rotates (GEO satellites), trees block different signal paths throughout the day, causing variable speeds.</dd>
+                    
+                    <dt>Why is upload speed much slower than download?</dt>
+                    <dd>Satellite internet typically has asymmetric speeds by design. Upload requires your dish to transmit to space, requiring more power and facing more interference. Typical ratios are 10:1 (100 Mbps down, 10 Mbps up).</dd>
+                    
+                    <dt>Does satellite internet get slower over time?</dt>
+                    <dd>Equipment can degrade (dish alignment shifts, cables weather), and network congestion increases as more users join. However, new satellite launches and technology updates often improve speeds over time, especially with Starlink.</dd>
+                    
+                    <dt>Why do speed tests show different results?</dt>
+                    <dd>Different speed test servers, testing protocols, and network routes cause variations. Use the same test (fast.com or speedtest.net) consistently. Also, provider networks may prioritize speed test traffic, showing better results than actual usage.</dd>
+                </dl>
+            </div>
+
+            <section class="related-faqs">
+                <h2>Related Satellite Internet FAQs</h2>
+                <ul>
+                    <li><a href="does-satellite-internet-lag-more-than-cable-fiber.html">Does satellite internet lag more than cable or fiber?</a></li>
+                    <li><a href="is-satellite-internet-good-for-zoom-teams-video-calls.html">Is satellite internet good for video calls?</a></li>
+                    <li><a href="how-fast-is-starlink-internet.html">How fast is Starlink internet?</a></li>
+                    <li><a href="why-does-satellite-internet-have-high-latency.html">Why does satellite internet have high latency?</a></li>
+                    <li><a href="./">Return to Satellite Internet FAQ Index</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Citation:</strong> ETips Emergency Preparedness. (2025). Why is my satellite internet so slow? Troubleshooting guide. Retrieved from https://hoarhouse.github.io/etips/faqs/satellite-internet/why-is-my-satellite-internet-so-slow.html</p>
+            <p>Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | Cite with attribution</p>
+        </div>
+    </footer>
+</body>
+</html>
