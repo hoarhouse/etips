@@ -122,10 +122,9 @@
         .comparison-table th {
             background: #ff3b30;
             color: white;
-            padding: 15px;
+            padding: 1rem;
             text-align: left;
             font-weight: 600;
-            font-size: 16px;
         }
         
         .comparison-table td {
@@ -142,17 +141,31 @@
             background: #f5f5f7;
         }
         
+        .highlight-box {
+            background: #fff8ee;
+            border: 1px solid #ffcc88;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .highlight-box h3 {
+            color: #ff6b00;
+            margin-bottom: 1rem;
+        }
+        
         .emergency-tip {
-            background: #fff3cd;
-            border-left: 4px solid #ff3b30;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
+            background: #fff8ee;
+            border: 1px solid #ffcc88;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
         }
         
         .emergency-tip h3 {
-            color: #ff3b30;
+            color: #ff6b00;
             margin-top: 0;
+            margin-bottom: 1rem;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -187,90 +200,107 @@
         
         .pros h3 {
             color: #2e7d32;
-            margin-bottom: 15px;
+            margin-bottom: 1rem;
+            margin-top: 0;
         }
         
         .cons h3 {
             color: #c62828;
-            margin-bottom: 15px;
+            margin-bottom: 1rem;
+            margin-top: 0;
         }
         
-        .faq-section {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid #d2d2d7;
-        }
-        
-        .faq-item {
-            margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #e5e5e7;
-        }
-        
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        
-        .faq-question {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #1d1d1f;
-        }
-        
-        .faq-answer {
-            font-size: 17px;
-            line-height: 1.65;
-            color: #1d1d1f;
-        }
-        
-        .related-links {
-            margin-top: 60px;
-            padding: 30px;
+        .mini-faq {
             background: #f5f5f7;
+            padding: 2rem;
             border-radius: 12px;
+            margin: 3rem 0;
         }
         
-        .related-links h3 {
-            margin-bottom: 20px;
-            color: #1d1d1f;
+        .mini-faq h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #000000;
         }
         
-        .related-links ul {
+        .mini-faq dl dt {
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #000000;
+        }
+        
+        .mini-faq dl dd {
+            margin-left: 0;
+            color: #333333;
+            line-height: 1.6;
+        }
+        
+        .related-faqs {
+            background: #f5f5f7;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+        
+        .related-faqs h2 {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .related-faqs ul {
             list-style: none;
             margin-left: 0;
         }
         
-        .related-links a {
-            color: #0066cc;
-            text-decoration: none;
-            font-size: 17px;
-            display: flex;
-            align-items: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #d2d2d7;
-            transition: color 0.3s;
+        .related-faqs li {
+            padding: 1rem 0;
+            border-bottom: 1px solid #e5e5e7;
         }
         
-        .related-links a:hover {
-            color: #ff3b30;
-        }
-        
-        .related-links li:last-child a {
+        .related-faqs li:last-child {
             border-bottom: none;
         }
         
-        footer {
-            margin-top: 80px;
-            padding: 40px 0;
-            border-top: 1px solid #d2d2d7;
+        .related-faqs a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        .related-faqs a:hover {
+            color: #ff3b30;
+            text-decoration: underline;
+        }
+        
+        .attribution {
+            margin-top: 4rem;
+            padding: 3rem 2rem;
+            border-top: 1px solid #e5e5e7;
+            text-align: center;
             background: #f5f5f7;
         }
         
         .footer-content {
-            text-align: center;
-            color: #6e6e73;
-            font-size: 14px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-content p {
+            color: #666666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .footer-content a {
+            color: #ff3b30;
+            text-decoration: none;
+        }
+        
+        .footer-content a:hover {
+            text-decoration: underline;
         }
         
         @media (max-width: 768px) {
@@ -340,7 +370,8 @@
             <h1>Is Satellite Internet Good for Zoom, Teams, or Video Calls?</h1>
             
             <div class="short-answer">
-                <strong>Short Answer:</strong> LEO satellite internet like Starlink works well for video calls with 20-40ms latency and 25-250 Mbps speeds. Traditional GEO satellite internet struggles with video calling due to 500-700ms latency, causing awkward delays and conversation overlap. For emergency communications, even high-latency connections can handle basic video calls with adjustments.
+                <h2>Short Answer:</h2>
+                <p>LEO satellite internet like Starlink works well for video calls with 20-40ms latency and 25-250 Mbps speeds. Traditional GEO satellite internet struggles with video calling due to 500-700ms latency, causing awkward delays and conversation overlap. For emergency communications, even high-latency connections can handle basic video calls with adjustments.</p>
             </div>
 
             <h2>Video Calling Requirements vs Satellite Capabilities</h2>
@@ -643,15 +674,12 @@
                 <li>Work continuity: Optimize settings for essential meetings</li>
             </ol>
 
-            <section class="faq-section">
-                <h2>Frequently Asked Questions</h2>
+            <div class="mini-faq">
+                <h3>Mini-FAQ: Common Questions</h3>
+                <dl>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">Can I work from home using satellite internet for daily video calls?</h3>
-                    <div class="faq-answer">
-                        <p>With Starlink's LEO satellite service, yes—many remote workers successfully use it for daily video calls. The 20-40ms latency and 25-250 Mbps speeds handle professional meetings well. Traditional GEO satellite internet makes daily video calls challenging due to 500-700ms delays, though it's possible with patience and adjusted expectations.</p>
-                    </div>
-                </div>
+                    <dt>Can I work from home using satellite internet for daily video calls?</dt>
+                    <dd>With Starlink's LEO satellite service, yes—many remote workers successfully use it for daily video calls. The 20-40ms latency and 25-250 Mbps speeds handle professional meetings well. Traditional GEO satellite internet makes daily video calls challenging due to 500-700ms delays, though it's possible with patience and adjusted expectations.</dd>
                 
                 <div class="faq-item">
                     <h3 class="faq-question">Why do video calls freeze on satellite internet?</h3>
