@@ -312,23 +312,30 @@
         }
         
         .related-faqs li {
-            padding: 1rem 0;
-            border-bottom: 1px solid #e5e5e7;
-        }
-        
-        .related-faqs li:last-child {
-            border-bottom: none;
+            margin-bottom: 1rem;
         }
         
         .related-faqs a {
-            color: #0066cc;
+            color: #000000;
             text-decoration: none;
-            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
         }
         
         .related-faqs a:hover {
+            background: #ffffff;
             color: #ff3b30;
-            text-decoration: underline;
+            transform: translateX(4px);
+        }
+        
+        .related-faqs a::before {
+            content: '→';
+            margin-right: 0.75rem;
+            color: #ff3b30;
+            font-weight: bold;
         }
         
         .attribution {
