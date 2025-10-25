@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how trees and buildings block satellite internet signals. Understand obstruction impacts, clearance requirements, and solutions for emergency connectivity.">
+    <meta name="keywords" content="satellite internet obstructions, trees blocking satellite, building interference, signal blockage, line of sight">
+    <title>Can Trees or Buildings Block Satellite Internet Signals? | Obstruction Guide</title>
+    <link rel="canonical" href="https://www.yoursite.com/faqs/satellite-internet/can-trees-or-buildings-block-satellite-internet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #f5f5f7;
+            border-bottom: 1px solid #d2d2d7;
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #1d1d1f;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ff3b30;
+        }
+        
+        main {
+            padding: 40px 0;
+            min-height: 60vh;
+        }
+        
+        h1 {
+            font-size: 48px;
+            line-height: 1.1;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+        
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 600;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+        
+        h3 {
+            font-size: 24px;
+            line-height: 1.3;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+        
+        .short-answer {
+            font-size: 21px;
+            line-height: 1.5;
+            color: #1d1d1f;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f5f5f7;
+            border-radius: 12px;
+        }
+        
+        p, ul, ol {
+            font-size: 17px;
+            line-height: 1.65;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .comparison-table th {
+            background: #ff3b30;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid #d2d2d7;
+            font-size: 15px;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #f5f5f7;
+        }
+        
+        .emergency-tip {
+            background: #fff3cd;
+            border-left: 4px solid #ff3b30;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .emergency-tip h3 {
+            color: #ff3b30;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .emergency-tip h3:before {
+            content: "⚠️";
+            font-size: 24px;
+        }
+        
+        .pros-cons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .pros, .cons {
+            padding: 25px;
+            border-radius: 12px;
+        }
+        
+        .pros {
+            background: #d1f4d1;
+            border: 1px solid #4caf50;
+        }
+        
+        .cons {
+            background: #ffd1d1;
+            border: 1px solid #ff3b30;
+        }
+        
+        .pros h3 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+        
+        .cons h3 {
+            color: #c62828;
+            margin-bottom: 15px;
+        }
+        
+        .faq-section {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #d2d2d7;
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+        
+        .faq-answer {
+            font-size: 17px;
+            line-height: 1.65;
+            color: #1d1d1f;
+        }
+        
+        .related-links {
+            margin-top: 60px;
+            padding: 30px;
+            background: #f5f5f7;
+            border-radius: 12px;
+        }
+        
+        .related-links h3 {
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+        
+        .related-links ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .related-links a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #d2d2d7;
+            transition: color 0.3s;
+        }
+        
+        .related-links a:hover {
+            color: #ff3b30;
+        }
+        
+        .related-links li:last-child a {
+            border-bottom: none;
+        }
+        
+        footer {
+            margin-top: 80px;
+            padding: 40px 0;
+            border-top: 1px solid #d2d2d7;
+            background: #f5f5f7;
+        }
+        
+        .footer-content {
+            text-align: center;
+            color: #6e6e73;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            h2 {
+                font-size: 28px;
+                margin-top: 40px;
+            }
+            
+            h3 {
+                font-size: 22px;
+            }
+            
+            .short-answer {
+                font-size: 19px;
+            }
+            
+            .pros-cons-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                font-size: 14px;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 10px;
+            }
+        }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Can trees or buildings block satellite internet signals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, trees and buildings can completely block satellite internet signals. Satellites require clear line-of-sight to function. Even partial obstructions from tree branches can cause 50-100% signal loss. Buildings create complete dead zones. Starlink needs a 100-degree cone of clear sky, while GEO satellites need unobstructed view to the southern sky (Northern Hemisphere)."
+        }
+      }]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/emergency-prep">Emergency Prep</a></li>
+                    <li><a href="/faqs">FAQs</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container">
+            <h1>Can Trees or Buildings Block Satellite Internet Signals?</h1>
+            
+            <div class="short-answer">
+                <strong>Short Answer:</strong> Yes, trees and buildings can completely block satellite internet signals. Satellites require clear line-of-sight to function. Even partial obstructions from tree branches can cause 50-100% signal loss. Buildings create complete dead zones. Starlink needs a 100-degree cone of clear sky, while GEO satellites need unobstructed view to the southern sky (Northern Hemisphere).
+            </div>
+
+            <h2>Understanding Line-of-Sight Requirements</h2>
+            <p>Satellite internet uses high-frequency radio waves that cannot penetrate solid objects. Understanding obstruction impacts is crucial for emergency preparedness site selection and maintaining connectivity when it matters most.</p>
+            
+            <h3>Why Obstructions Block Signals</h3>
+            <ul>
+                <li><strong>High frequencies:</strong> Ka/Ku bands don't penetrate objects</li>
+                <li><strong>Direct path required:</strong> Signals travel in straight lines</li>
+                <li><strong>No diffraction:</strong> Unlike AM radio, can't bend around obstacles</li>
+                <li><strong>Water absorption:</strong> Tree leaves contain water that absorbs signals</li>
+                <li><strong>Complete blockage:</strong> Even thin branches can interrupt service</li>
+            </ul>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Obstruction Type</th>
+                        <th>Signal Impact</th>
+                        <th>Service Effect</th>
+                        <th>Solution Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Clear sky</td>
+                        <td>0% loss</td>
+                        <td>Full performance</td>
+                        <td>Ideal setup</td>
+                    </tr>
+                    <tr>
+                        <td>Sparse branches</td>
+                        <td>20-40% loss</td>
+                        <td>Intermittent drops</td>
+                        <td>Trim or relocate</td>
+                    </tr>
+                    <tr>
+                        <td>Dense foliage</td>
+                        <td>60-80% loss</td>
+                        <td>Frequent outages</td>
+                        <td>Major trimming needed</td>
+                    </tr>
+                    <tr>
+                        <td>Tree trunk</td>
+                        <td>100% loss</td>
+                        <td>No signal</td>
+                        <td>Must relocate</td>
+                    </tr>
+                    <tr>
+                        <td>Building edge</td>
+                        <td>50-100% loss</td>
+                        <td>Unreliable</td>
+                        <td>Mount above/relocate</td>
+                    </tr>
+                    <tr>
+                        <td>Building blocking</td>
+                        <td>100% loss</td>
+                        <td>No service</td>
+                        <td>Find new location</td>
+                    </tr>
+                    <tr>
+                        <td>Power lines</td>
+                        <td>10-30% loss</td>
+                        <td>Degraded speeds</td>
+                        <td>Adjust position</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="emergency-tip">
+                <h3>Emergency Site Selection</h3>
+                <p>During disasters, finding clear sky views becomes critical. Scout multiple potential dish locations before emergencies. Rooftops, clearings, and parking lots often provide best views. Mobile/portable setups let you relocate if your primary site becomes obstructed by storm damage or debris.</p>
+            </div>
+
+            <h2>Clearance Requirements by Satellite Type</h2>
+            
+            <h3>GEO Satellite Requirements (HughesNet/Viasat)</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Look Angle</th>
+                        <th>Azimuth Direction</th>
+                        <th>Clearance Needed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Northern US</td>
+                        <td>25-35°</td>
+                        <td>160-220° (S/SW)</td>
+                        <td>Low southern horizon</td>
+                    </tr>
+                    <tr>
+                        <td>Central US</td>
+                        <td>35-45°</td>
+                        <td>170-200° (South)</td>
+                        <td>Mid southern sky</td>
+                    </tr>
+                    <tr>
+                        <td>Southern US</td>
+                        <td>45-55°</td>
+                        <td>180° (Due South)</td>
+                        <td>High southern sky</td>
+                    </tr>
+                    <tr>
+                        <td>Alaska</td>
+                        <td>10-20°</td>
+                        <td>140-160° (SE)</td>
+                        <td>Very low horizon</td>
+                    </tr>
+                    <tr>
+                        <td>Hawaii</td>
+                        <td>60-70°</td>
+                        <td>Variable</td>
+                        <td>Nearly overhead</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>LEO Satellite Requirements (Starlink)</h3>
+            <ul>
+                <li><strong>Field of view:</strong> 100° cone above dish (25° from vertical)</li>
+                <li><strong>All directions:</strong> Satellites pass overhead from all angles</li>
+                <li><strong>Dynamic tracking:</strong> Connects to multiple moving satellites</li>
+                <li><strong>Obstruction tolerance:</strong> Can work with up to 5% obstruction</li>
+                <li><strong>App visualization:</strong> Shows exact obstruction mapping</li>
+            </ul>
+
+            <h2>Tree Obstruction Issues</h2>
+            
+            <h3>Seasonal Variations</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Season</th>
+                        <th>Deciduous Trees</th>
+                        <th>Evergreen Trees</th>
+                        <th>Service Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spring</td>
+                        <td>New leaves emerging</td>
+                        <td>Constant obstruction</td>
+                        <td>Degrading performance</td>
+                    </tr>
+                    <tr>
+                        <td>Summer</td>
+                        <td>Full foliage (worst)</td>
+                        <td>Constant obstruction</td>
+                        <td>Maximum interference</td>
+                    </tr>
+                    <tr>
+                        <td>Fall</td>
+                        <td>Leaves falling</td>
+                        <td>Constant obstruction</td>
+                        <td>Improving gradually</td>
+                    </tr>
+                    <tr>
+                        <td>Winter</td>
+                        <td>Bare branches (best)</td>
+                        <td>Constant obstruction</td>
+                        <td>Minimal (deciduous)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Tree Growth Considerations</h3>
+            <ul>
+                <li><strong>Annual growth:</strong> Trees grow 1-4 feet per year</li>
+                <li><strong>Progressive degradation:</strong> Clear view can become obstructed</li>
+                <li><strong>Maintenance required:</strong> Regular trimming necessary</li>
+                <li><strong>Neighbor's trees:</strong> May grow into signal path</li>
+                <li><strong>Storm damage:</strong> Fallen branches create new obstructions</li>
+            </ul>
+
+            <h2>Building and Structure Interference</h2>
+            
+            <h3>Common Obstruction Scenarios</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Obstruction Risk</th>
+                        <th>Typical Problems</th>
+                        <th>Solutions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Urban apartment</td>
+                        <td>Very high</td>
+                        <td>Buildings all around</td>
+                        <td>Roof access needed</td>
+                    </tr>
+                    <tr>
+                        <td>Suburban home</td>
+                        <td>Moderate</td>
+                        <td>Houses, trees</td>
+                        <td>Careful placement</td>
+                    </tr>
+                    <tr>
+                        <td>Rural property</td>
+                        <td>Low</td>
+                        <td>Some trees</td>
+                        <td>Multiple options</td>
+                    </tr>
+                    <tr>
+                        <td>Balcony mount</td>
+                        <td>High</td>
+                        <td>Building above</td>
+                        <td>Limited angles</td>
+                    </tr>
+                    <tr>
+                        <td>Ground level</td>
+                        <td>Moderate-High</td>
+                        <td>Surrounding structures</td>
+                        <td>Pole mount helps</td>
+                    </tr>
+                    <tr>
+                        <td>Rooftop</td>
+                        <td>Low</td>
+                        <td>Usually clear</td>
+                        <td>Best option</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="emergency-tip">
+                <h3>Urban Emergency Solutions</h3>
+                <p>In cities during disasters, finding clear sky views is challenging. Consider: parking garages (top level), flat commercial roofs, parks and sports fields, emergency shelter locations, portable setups on vehicles. Pre-identify multiple backup locations with clear southern (GEO) or open sky (LEO) views.</p>
+            </div>
+
+            <h2>Testing and Identifying Obstructions</h2>
+            
+            <h3>Obstruction Detection Methods</h3>
+            <ul>
+                <li><strong>Smartphone apps:</strong> Starlink app shows real-time obstruction mapping</li>
+                <li><strong>Compass method:</strong> Find direction and elevation angles</li>
+                <li><strong>Signal strength meter:</strong> Monitor drops when obstructed</li>
+                <li><strong>Time-based patterns:</strong> Note when outages occur</li>
+                <li><strong>Visual inspection:</strong> Look for objects in signal path</li>
+                <li><strong>Professional site survey:</strong> Installer evaluation</li>
+            </ul>
+
+            <h3>Obstruction Mapping Tools</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Tool/Method</th>
+                        <th>Accuracy</th>
+                        <th>Cost</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Starlink App</td>
+                        <td>Excellent</td>
+                        <td>Free</td>
+                        <td>Starlink users</td>
+                    </tr>
+                    <tr>
+                        <td>Dish Pointer Apps</td>
+                        <td>Good</td>
+                        <td>Free/$5</td>
+                        <td>GEO satellites</td>
+                    </tr>
+                    <tr>
+                        <td>Inclinometer</td>
+                        <td>Very good</td>
+                        <td>$20-50</td>
+                        <td>Precise angles</td>
+                    </tr>
+                    <tr>
+                        <td>Site Survey</td>
+                        <td>Professional</td>
+                        <td>$100-300</td>
+                        <td>Permanent installs</td>
+                    </tr>
+                    <tr>
+                        <td>Trial and Error</td>
+                        <td>Variable</td>
+                        <td>Time only</td>
+                        <td>Temporary setups</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Solutions for Obstruction Problems</h2>
+            
+            <h3>Mounting Solutions</h3>
+            <ul>
+                <li><strong>Pole mounts:</strong> Raise dish above obstructions (10-30 feet)</li>
+                <li><strong>Roof mounts:</strong> Get above trees and buildings</li>
+                <li><strong>Tower installation:</strong> Professional 40-100 foot towers</li>
+                <li><strong>Relocation:</strong> Find clearer location on property</li>
+                <li><strong>Long cable runs:</strong> Place dish up to 150 feet away</li>
+                <li><strong>Secondary location:</strong> Portable setup for emergencies</li>
+            </ul>
+
+            <h3>Tree Management Options</h3>
+            <ol>
+                <li><strong>Professional trimming:</strong> Remove interfering branches</li>
+                <li><strong>Topping:</strong> Reduce height (consider tree health)</li>
+                <li><strong>Removal:</strong> Last resort for critical communications</li>
+                <li><strong>Negotiate with neighbors:</strong> For trees on property lines</li>
+                <li><strong>Seasonal adjustments:</strong> Move dish winter vs summer</li>
+            </ol>
+
+            <div class="pros-cons-grid">
+                <div class="pros">
+                    <h3>✓ Obstruction Workarounds</h3>
+                    <ul>
+                        <li>Tall mounts overcome most issues</li>
+                        <li>Portable setups allow relocation</li>
+                        <li>Starlink handles partial obstructions</li>
+                        <li>Winter improves deciduous trees</li>
+                        <li>Multiple mounting options exist</li>
+                        <li>Apps help find clear spots</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>✗ Obstruction Challenges</h3>
+                    <ul>
+                        <li>Cannot penetrate any solid objects</li>
+                        <li>Trees grow over time</li>
+                        <li>Urban areas heavily obstructed</li>
+                        <li>Rental property limitations</li>
+                        <li>Neighbor's trees out of control</li>
+                        <li>Storm damage creates new blocks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Emergency Preparedness Considerations</h2>
+            
+            <h3>Pre-Disaster Planning</h3>
+            <ul>
+                <li>Map multiple clear-sky locations on your property</li>
+                <li>Test portable setup in various positions</li>
+                <li>Document obstruction-free zones with photos</li>
+                <li>Maintain trees before storm season</li>
+                <li>Install permanent mount in optimal location</li>
+                <li>Consider backup location agreements (friend/family)</li>
+            </ul>
+
+            <h3>Post-Disaster Adaptations</h3>
+            <ul>
+                <li><strong>Storm damage assessment:</strong> New fallen trees/debris</li>
+                <li><strong>Temporary relocations:</strong> Set up in clearings</li>
+                <li><strong>Vehicle-mounted options:</strong> Drive to open areas</li>
+                <li><strong>Community sharing:</strong> Set up in central clear location</li>
+                <li><strong>Emergency trimming:</strong> Clear critical obstructions</li>
+            </ul>
+
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">How much clear sky does Starlink actually need?</h3>
+                    <div class="faq-answer">
+                        <p>Starlink needs a 100-degree cone of clear sky above the dish, which means no obstructions from 25 degrees above the horizon in all directions. The Starlink app shows this as a circle—any obstructions appearing in this circle will cause service interruptions every few minutes as satellites pass behind them.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Can satellite internet work through windows?</h3>
+                    <div class="faq-answer">
+                        <p>No, satellite internet cannot reliably work through windows. Modern windows with low-E coatings block satellite signals completely. Even regular glass causes 3-8 dB signal loss. While you might get intermittent connectivity through single-pane windows, it won't be stable enough for regular use.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">How far can I run cable to avoid obstructions?</h3>
+                    <div class="faq-answer">
+                        <p>Starlink's standard cable is 75-100 feet, with 150-foot options available. HughesNet and Viasat can use RG6 coaxial cable up to 150-200 feet with proper signal amplifiers. Beyond these distances, signal degradation becomes problematic. For longer runs, consider fiber optic converters or relocating the modem.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Do small branches really matter?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, even small branches cause problems. A single branch crossing the signal path might cause brief 1-2 second dropouts every time a satellite passes behind it. With Starlink switching satellites every 4-15 minutes, this creates frequent interruptions. Multiple small branches compound the problem significantly.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">What's the minimum mounting height to clear obstructions?</h3>
+                    <div class="faq-answer">
+                        <p>Height depends on your specific obstructions. For every 10 feet of horizontal distance to an obstruction, you need about 3-5 feet of height to clear it (assuming 15-25 degree angle). A 30-foot tall tree that's 60 feet away requires mounting at least 10-15 feet high. Use the Starlink app or trigonometry to calculate exact requirements.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="related-links">
+                <h3>Related Signal & Setup Resources</h3>
+                <ul>
+                    <li><a href="how-can-i-improve-satellite-internet-signal-quality.html">→ How to Improve Signal Quality</a></li>
+                    <li><a href="does-rain-or-snow-affect-satellite-internet.html">→ Does Weather Affect Satellite Internet?</a></li>
+                    <li><a href="what-equipment-do-you-need-for-starlink.html">→ Starlink Equipment Requirements</a></li>
+                    <li><a href="../installation/satellite-dish-mounting-options.html">→ Dish Mounting Options</a></li>
+                    <li><a href="../troubleshooting/fixing-obstruction-errors.html">→ Fixing Obstruction Errors</a></li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 60px; padding: 30px; background: #f0f0f0; border-radius: 12px;">
+                <p style="font-size: 14px; color: #666; text-align: center; margin: 0;">
+                    This content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0066cc;">CC BY 4.0</a>. 
+                    You may freely share and adapt this material with attribution.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Emergency Internet Guide. Educational resource for emergency preparedness.</p>
+                <p>Always have multiple communication methods ready for emergencies.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
